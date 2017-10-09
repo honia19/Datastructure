@@ -1,0 +1,3680 @@
+<html>
+<head>
+<title>TestNG:  Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>317/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Mon Jun 05 16:06:43 EEST 2017</td>
+</tr>
+<tr><td>Total time:</td><td>9 seconds (9421 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='AListAllTestNG.testAddEnd_0()'><b>testAddEnd_0</b><br>Test class: AListAllTestNG</td>
+<td></td>
+<td>0</td>
+<td>AListAllTestNG@20e2cbe0</td></tr>
+<tr>
+<td title='AListAllTestNG.testAddEnd_0()'><b>testAddEnd_0</b><br>Test class: AListAllTestNG</td>
+<td></td>
+<td>0</td>
+<td>AListAllTestNG@2a2d45ba</td></tr>
+<tr>
+<td title='AListAllTestNG.testAddEnd_0()'><b>testAddEnd_0</b><br>Test class: AListAllTestNG</td>
+<td></td>
+<td>0</td>
+<td>AListAllTestNG@2a5ca609</td></tr>
+<tr>
+<td title='LList2WhiteNG.testAddEnd_0()'><b>testAddEnd_0</b><br>Test class: LList2WhiteNG</td>
+<td></td>
+<td>0</td>
+<td>LList2WhiteNG@5c7fa833</td></tr>
+<tr>
+<td title='AListAllTestNG.testAddEnd_1()'><b>testAddEnd_1</b><br>Test class: AListAllTestNG</td>
+<td></td>
+<td>0</td>
+<td>AListAllTestNG@20e2cbe0</td></tr>
+<tr>
+<td title='AListAllTestNG.testAddEnd_1()'><b>testAddEnd_1</b><br>Test class: AListAllTestNG</td>
+<td></td>
+<td>0</td>
+<td>AListAllTestNG@2a2d45ba</td></tr>
+<tr>
+<td title='AListAllTestNG.testAddEnd_1()'><b>testAddEnd_1</b><br>Test class: AListAllTestNG</td>
+<td></td>
+<td>0</td>
+<td>AListAllTestNG@2a5ca609</td></tr>
+<tr>
+<td title='LList2WhiteNG.testAddEnd_1()'><b>testAddEnd_1</b><br>Test class: LList2WhiteNG</td>
+<td></td>
+<td>0</td>
+<td>LList2WhiteNG@5c7fa833</td></tr>
+<tr>
+<td title='AListAllTestNG.testAddEnd_2()'><b>testAddEnd_2</b><br>Test class: AListAllTestNG</td>
+<td></td>
+<td>0</td>
+<td>AListAllTestNG@20e2cbe0</td></tr>
+<tr>
+<td title='AListAllTestNG.testAddEnd_2()'><b>testAddEnd_2</b><br>Test class: AListAllTestNG</td>
+<td></td>
+<td>0</td>
+<td>AListAllTestNG@2a2d45ba</td></tr>
+<tr>
+<td title='AListAllTestNG.testAddEnd_2()'><b>testAddEnd_2</b><br>Test class: AListAllTestNG</td>
+<td></td>
+<td>0</td>
+<td>AListAllTestNG@2a5ca609</td></tr>
+<tr>
+<td title='LList2WhiteNG.testAddEnd_2()'><b>testAddEnd_2</b><br>Test class: LList2WhiteNG</td>
+<td></td>
+<td>0</td>
+<td>LList2WhiteNG@5c7fa833</td></tr>
+<tr>
+<td title='AListAllTestNG.testAddEnd_many()'><b>testAddEnd_many</b><br>Test class: AListAllTestNG</td>
+<td></td>
+<td>0</td>
+<td>AListAllTestNG@20e2cbe0</td></tr>
+<tr>
+<td title='AListAllTestNG.testAddEnd_many()'><b>testAddEnd_many</b><br>Test class: AListAllTestNG</td>
+<td></td>
+<td>0</td>
+<td>AListAllTestNG@2a2d45ba</td></tr>
+<tr>
+<td title='AListAllTestNG.testAddEnd_many()'><b>testAddEnd_many</b><br>Test class: AListAllTestNG</td>
+<td></td>
+<td>0</td>
+<td>AListAllTestNG@2a5ca609</td></tr>
+<tr>
+<td title='LList2WhiteNG.testAddEnd_many()'><b>testAddEnd_many</b><br>Test class: LList2WhiteNG</td>
+<td></td>
+<td>0</td>
+<td>LList2WhiteNG@5c7fa833</td></tr>
+<tr>
+<td title='AListAllTestNG.testAddPos_0_ex()'><b>testAddPos_0_ex</b><br>Test class: AListAllTestNG</td>
+<td><div><pre>java.lang.IllegalArgumentException
+	at AList2.addPos(AList2.java:254)
+	at AListAllTestNG.testAddPos_0_ex(AListAllTestNG.java:475)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace510464020", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace510464020'><pre>java.lang.IllegalArgumentException
+	at AList2.addPos(AList2.java:254)
+	at AListAllTestNG.testAddPos_0_ex(AListAllTestNG.java:475)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+</pre></div></td>
+<td>0</td>
+<td>AListAllTestNG@20e2cbe0</td></tr>
+<tr>
+<td title='AListAllTestNG.testAddPos_0_ex()'><b>testAddPos_0_ex</b><br>Test class: AListAllTestNG</td>
+<td><div><pre>java.lang.IllegalArgumentException
+	at AList0.addPos(AList0.java:208)
+	at AListAllTestNG.testAddPos_0_ex(AListAllTestNG.java:475)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace525683462", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace525683462'><pre>java.lang.IllegalArgumentException
+	at AList0.addPos(AList0.java:208)
+	at AListAllTestNG.testAddPos_0_ex(AListAllTestNG.java:475)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+</pre></div></td>
+<td>0</td>
+<td>AListAllTestNG@2a2d45ba</td></tr>
+<tr>
+<td title='AListAllTestNG.testAddPos_0_ex()'><b>testAddPos_0_ex</b><br>Test class: AListAllTestNG</td>
+<td><div><pre>java.lang.IllegalArgumentException
+	at AList1.addPos(AList1.java:230)
+	at AListAllTestNG.testAddPos_0_ex(AListAllTestNG.java:475)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace319977154", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace319977154'><pre>java.lang.IllegalArgumentException
+	at AList1.addPos(AList1.java:230)
+	at AListAllTestNG.testAddPos_0_ex(AListAllTestNG.java:475)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+</pre></div></td>
+<td>0</td>
+<td>AListAllTestNG@2a5ca609</td></tr>
+<tr>
+<td title='AListAllTestNG.testAddPos_1()'><b>testAddPos_1</b><br>Test class: AListAllTestNG</td>
+<td><div><pre>java.lang.IllegalArgumentException
+	at AList2.addPos(AList2.java:254)
+	at AListAllTestNG.testAddPos_1(AListAllTestNG.java:483)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1908143486", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1908143486'><pre>java.lang.IllegalArgumentException
+	at AList2.addPos(AList2.java:254)
+	at AListAllTestNG.testAddPos_1(AListAllTestNG.java:483)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+</pre></div></td>
+<td>0</td>
+<td>AListAllTestNG@20e2cbe0</td></tr>
+<tr>
+<td title='AListAllTestNG.testAddPos_1()'><b>testAddPos_1</b><br>Test class: AListAllTestNG</td>
+<td><div><pre>java.lang.IllegalArgumentException
+	at AList0.addPos(AList0.java:208)
+	at AListAllTestNG.testAddPos_1(AListAllTestNG.java:483)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace222624801", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace222624801'><pre>java.lang.IllegalArgumentException
+	at AList0.addPos(AList0.java:208)
+	at AListAllTestNG.testAddPos_1(AListAllTestNG.java:483)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+</pre></div></td>
+<td>0</td>
+<td>AListAllTestNG@2a2d45ba</td></tr>
+<tr>
+<td title='AListAllTestNG.testAddPos_1()'><b>testAddPos_1</b><br>Test class: AListAllTestNG</td>
+<td><div><pre>java.lang.IllegalArgumentException
+	at AList1.addPos(AList1.java:230)
+	at AListAllTestNG.testAddPos_1(AListAllTestNG.java:483)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1316864772", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1316864772'><pre>java.lang.IllegalArgumentException
+	at AList1.addPos(AList1.java:230)
+	at AListAllTestNG.testAddPos_1(AListAllTestNG.java:483)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+</pre></div></td>
+<td>0</td>
+<td>AListAllTestNG@2a5ca609</td></tr>
+<tr>
+<td title='AListAllTestNG.testAddPos_1_End()'><b>testAddPos_1_End</b><br>Test class: AListAllTestNG</td>
+<td></td>
+<td>0</td>
+<td>AListAllTestNG@20e2cbe0</td></tr>
+<tr>
+<td title='AListAllTestNG.testAddPos_1_End()'><b>testAddPos_1_End</b><br>Test class: AListAllTestNG</td>
+<td></td>
+<td>0</td>
+<td>AListAllTestNG@2a2d45ba</td></tr>
+<tr>
+<td title='AListAllTestNG.testAddPos_1_End()'><b>testAddPos_1_End</b><br>Test class: AListAllTestNG</td>
+<td></td>
+<td>0</td>
+<td>AListAllTestNG@2a5ca609</td></tr>
+<tr>
+<td title='LList2WhiteNG.testAddPos_1_End()'><b>testAddPos_1_End</b><br>Test class: LList2WhiteNG</td>
+<td></td>
+<td>0</td>
+<td>LList2WhiteNG@5c7fa833</td></tr>
+<tr>
+<td title='AListAllTestNG.testAddPos_1_Start()'><b>testAddPos_1_Start</b><br>Test class: AListAllTestNG</td>
+<td></td>
+<td>0</td>
+<td>AListAllTestNG@20e2cbe0</td></tr>
+<tr>
+<td title='AListAllTestNG.testAddPos_1_Start()'><b>testAddPos_1_Start</b><br>Test class: AListAllTestNG</td>
+<td></td>
+<td>0</td>
+<td>AListAllTestNG@2a2d45ba</td></tr>
+<tr>
+<td title='AListAllTestNG.testAddPos_1_Start()'><b>testAddPos_1_Start</b><br>Test class: AListAllTestNG</td>
+<td></td>
+<td>0</td>
+<td>AListAllTestNG@2a5ca609</td></tr>
+<tr>
+<td title='LList2WhiteNG.testAddPos_1_Start()'><b>testAddPos_1_Start</b><br>Test class: LList2WhiteNG</td>
+<td></td>
+<td>0</td>
+<td>LList2WhiteNG@5c7fa833</td></tr>
+<tr>
+<td title='AListAllTestNG.testAddPos_2_End()'><b>testAddPos_2_End</b><br>Test class: AListAllTestNG</td>
+<td></td>
+<td>0</td>
+<td>AListAllTestNG@20e2cbe0</td></tr>
+<tr>
+<td title='AListAllTestNG.testAddPos_2_End()'><b>testAddPos_2_End</b><br>Test class: AListAllTestNG</td>
+<td></td>
+<td>0</td>
+<td>AListAllTestNG@2a2d45ba</td></tr>
+<tr>
+<td title='AListAllTestNG.testAddPos_2_End()'><b>testAddPos_2_End</b><br>Test class: AListAllTestNG</td>
+<td></td>
+<td>0</td>
+<td>AListAllTestNG@2a5ca609</td></tr>
+<tr>
+<td title='LList2WhiteNG.testAddPos_2_End()'><b>testAddPos_2_End</b><br>Test class: LList2WhiteNG</td>
+<td></td>
+<td>0</td>
+<td>LList2WhiteNG@5c7fa833</td></tr>
+<tr>
+<td title='AListAllTestNG.testAddPos_many()'><b>testAddPos_many</b><br>Test class: AListAllTestNG</td>
+<td></td>
+<td>0</td>
+<td>AListAllTestNG@20e2cbe0</td></tr>
+<tr>
+<td title='AListAllTestNG.testAddPos_many()'><b>testAddPos_many</b><br>Test class: AListAllTestNG</td>
+<td></td>
+<td>0</td>
+<td>AListAllTestNG@2a2d45ba</td></tr>
+<tr>
+<td title='AListAllTestNG.testAddPos_many()'><b>testAddPos_many</b><br>Test class: AListAllTestNG</td>
+<td></td>
+<td>0</td>
+<td>AListAllTestNG@2a5ca609</td></tr>
+<tr>
+<td title='LList2WhiteNG.testAddPos_many()'><b>testAddPos_many</b><br>Test class: LList2WhiteNG</td>
+<td></td>
+<td>0</td>
+<td>LList2WhiteNG@5c7fa833</td></tr>
+<tr>
+<td title='LListTest1NG.testAddStart_0()'><b>testAddStart_0</b><br>Test class: LListTest1NG</td>
+<td></td>
+<td>0</td>
+<td>LListTest1NG@548b7f67</td></tr>
+<tr>
+<td title='LListTest1NG.testAddStart_0()'><b>testAddStart_0</b><br>Test class: LListTest1NG</td>
+<td></td>
+<td>0</td>
+<td>LListTest1NG@5ae9a829</td></tr>
+<tr>
+<td title='LListTest1NG.testAddStart_0()'><b>testAddStart_0</b><br>Test class: LListTest1NG</td>
+<td></td>
+<td>0</td>
+<td>LListTest1NG@6d8a00e3</td></tr>
+<tr>
+<td title='AListAllTestNG.testAddStart_0()'><b>testAddStart_0</b><br>Test class: AListAllTestNG</td>
+<td></td>
+<td>0</td>
+<td>AListAllTestNG@20e2cbe0</td></tr>
+<tr>
+<td title='AListAllTestNG.testAddStart_0()'><b>testAddStart_0</b><br>Test class: AListAllTestNG</td>
+<td></td>
+<td>0</td>
+<td>AListAllTestNG@2a2d45ba</td></tr>
+<tr>
+<td title='AListAllTestNG.testAddStart_0()'><b>testAddStart_0</b><br>Test class: AListAllTestNG</td>
+<td></td>
+<td>0</td>
+<td>AListAllTestNG@2a5ca609</td></tr>
+<tr>
+<td title='LList2WhiteNG.testAddStart_0()'><b>testAddStart_0</b><br>Test class: LList2WhiteNG</td>
+<td></td>
+<td>0</td>
+<td>LList2WhiteNG@5c7fa833</td></tr>
+<tr>
+<td title='LListTest1NG.testAddStart_1()'><b>testAddStart_1</b><br>Test class: LListTest1NG</td>
+<td></td>
+<td>0</td>
+<td>LListTest1NG@548b7f67</td></tr>
+<tr>
+<td title='LListTest1NG.testAddStart_1()'><b>testAddStart_1</b><br>Test class: LListTest1NG</td>
+<td></td>
+<td>0</td>
+<td>LListTest1NG@5ae9a829</td></tr>
+<tr>
+<td title='LListTest1NG.testAddStart_1()'><b>testAddStart_1</b><br>Test class: LListTest1NG</td>
+<td></td>
+<td>0</td>
+<td>LListTest1NG@6d8a00e3</td></tr>
+<tr>
+<td title='AListAllTestNG.testAddStart_1()'><b>testAddStart_1</b><br>Test class: AListAllTestNG</td>
+<td></td>
+<td>0</td>
+<td>AListAllTestNG@20e2cbe0</td></tr>
+<tr>
+<td title='AListAllTestNG.testAddStart_1()'><b>testAddStart_1</b><br>Test class: AListAllTestNG</td>
+<td></td>
+<td>0</td>
+<td>AListAllTestNG@2a2d45ba</td></tr>
+<tr>
+<td title='AListAllTestNG.testAddStart_1()'><b>testAddStart_1</b><br>Test class: AListAllTestNG</td>
+<td></td>
+<td>0</td>
+<td>AListAllTestNG@2a5ca609</td></tr>
+<tr>
+<td title='LList2WhiteNG.testAddStart_1()'><b>testAddStart_1</b><br>Test class: LList2WhiteNG</td>
+<td></td>
+<td>0</td>
+<td>LList2WhiteNG@5c7fa833</td></tr>
+<tr>
+<td title='LListTest1NG.testAddStart_2()'><b>testAddStart_2</b><br>Test class: LListTest1NG</td>
+<td></td>
+<td>0</td>
+<td>LListTest1NG@548b7f67</td></tr>
+<tr>
+<td title='LListTest1NG.testAddStart_2()'><b>testAddStart_2</b><br>Test class: LListTest1NG</td>
+<td></td>
+<td>0</td>
+<td>LListTest1NG@5ae9a829</td></tr>
+<tr>
+<td title='LListTest1NG.testAddStart_2()'><b>testAddStart_2</b><br>Test class: LListTest1NG</td>
+<td></td>
+<td>0</td>
+<td>LListTest1NG@6d8a00e3</td></tr>
+<tr>
+<td title='AListAllTestNG.testAddStart_2()'><b>testAddStart_2</b><br>Test class: AListAllTestNG</td>
+<td></td>
+<td>0</td>
+<td>AListAllTestNG@20e2cbe0</td></tr>
+<tr>
+<td title='AListAllTestNG.testAddStart_2()'><b>testAddStart_2</b><br>Test class: AListAllTestNG</td>
+<td></td>
+<td>0</td>
+<td>AListAllTestNG@2a2d45ba</td></tr>
+<tr>
+<td title='AListAllTestNG.testAddStart_2()'><b>testAddStart_2</b><br>Test class: AListAllTestNG</td>
+<td></td>
+<td>0</td>
+<td>AListAllTestNG@2a5ca609</td></tr>
+<tr>
+<td title='LList2WhiteNG.testAddStart_2()'><b>testAddStart_2</b><br>Test class: LList2WhiteNG</td>
+<td></td>
+<td>0</td>
+<td>LList2WhiteNG@5c7fa833</td></tr>
+<tr>
+<td title='LListTest1NG.testAddStart_many()'><b>testAddStart_many</b><br>Test class: LListTest1NG</td>
+<td></td>
+<td>0</td>
+<td>LListTest1NG@548b7f67</td></tr>
+<tr>
+<td title='LListTest1NG.testAddStart_many()'><b>testAddStart_many</b><br>Test class: LListTest1NG</td>
+<td></td>
+<td>0</td>
+<td>LListTest1NG@5ae9a829</td></tr>
+<tr>
+<td title='LListTest1NG.testAddStart_many()'><b>testAddStart_many</b><br>Test class: LListTest1NG</td>
+<td></td>
+<td>0</td>
+<td>LListTest1NG@6d8a00e3</td></tr>
+<tr>
+<td title='AListAllTestNG.testAddStart_many()'><b>testAddStart_many</b><br>Test class: AListAllTestNG</td>
+<td></td>
+<td>0</td>
+<td>AListAllTestNG@20e2cbe0</td></tr>
+<tr>
+<td title='AListAllTestNG.testAddStart_many()'><b>testAddStart_many</b><br>Test class: AListAllTestNG</td>
+<td></td>
+<td>0</td>
+<td>AListAllTestNG@2a2d45ba</td></tr>
+<tr>
+<td title='AListAllTestNG.testAddStart_many()'><b>testAddStart_many</b><br>Test class: AListAllTestNG</td>
+<td></td>
+<td>0</td>
+<td>AListAllTestNG@2a5ca609</td></tr>
+<tr>
+<td title='LList2WhiteNG.testAddStart_many()'><b>testAddStart_many</b><br>Test class: LList2WhiteNG</td>
+<td></td>
+<td>0</td>
+<td>LList2WhiteNG@5c7fa833</td></tr>
+<tr>
+<td title='AListAllTestNG.testDelEnd_0()'><b>testDelEnd_0</b><br>Test class: AListAllTestNG</td>
+<td><div><pre>java.lang.IllegalArgumentException
+	at AList2.delEnd(AList2.java:311)
+	at AListAllTestNG.testDelEnd_0(AListAllTestNG.java:578)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1384722895", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1384722895'><pre>java.lang.IllegalArgumentException
+	at AList2.delEnd(AList2.java:311)
+	at AListAllTestNG.testDelEnd_0(AListAllTestNG.java:578)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+</pre></div></td>
+<td>0</td>
+<td>AListAllTestNG@20e2cbe0</td></tr>
+<tr>
+<td title='AListAllTestNG.testDelEnd_0()'><b>testDelEnd_0</b><br>Test class: AListAllTestNG</td>
+<td><div><pre>java.lang.IllegalArgumentException
+	at AList0.delEnd(AList0.java:244)
+	at AListAllTestNG.testDelEnd_0(AListAllTestNG.java:578)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace733957003", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace733957003'><pre>java.lang.IllegalArgumentException
+	at AList0.delEnd(AList0.java:244)
+	at AListAllTestNG.testDelEnd_0(AListAllTestNG.java:578)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+</pre></div></td>
+<td>0</td>
+<td>AListAllTestNG@2a2d45ba</td></tr>
+<tr>
+<td title='AListAllTestNG.testDelEnd_0()'><b>testDelEnd_0</b><br>Test class: AListAllTestNG</td>
+<td><div><pre>java.lang.IllegalArgumentException
+	at AList1.delEnd(AList1.java:260)
+	at AListAllTestNG.testDelEnd_0(AListAllTestNG.java:578)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace55331187", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace55331187'><pre>java.lang.IllegalArgumentException
+	at AList1.delEnd(AList1.java:260)
+	at AListAllTestNG.testDelEnd_0(AListAllTestNG.java:578)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+</pre></div></td>
+<td>0</td>
+<td>AListAllTestNG@2a5ca609</td></tr>
+<tr>
+<td title='LList2WhiteNG.testDelEnd_1()'><b>testDelEnd_1</b><br>Test class: LList2WhiteNG</td>
+<td></td>
+<td>0</td>
+<td>LList2WhiteNG@5c7fa833</td></tr>
+<tr>
+<td title='LList2WhiteNG.testDelEnd_2()'><b>testDelEnd_2</b><br>Test class: LList2WhiteNG</td>
+<td></td>
+<td>0</td>
+<td>LList2WhiteNG@5c7fa833</td></tr>
+<tr>
+<td title='AListAllTestNG.testDelEnd_many()'><b>testDelEnd_many</b><br>Test class: AListAllTestNG</td>
+<td></td>
+<td>0</td>
+<td>AListAllTestNG@20e2cbe0</td></tr>
+<tr>
+<td title='AListAllTestNG.testDelEnd_many()'><b>testDelEnd_many</b><br>Test class: AListAllTestNG</td>
+<td></td>
+<td>0</td>
+<td>AListAllTestNG@2a2d45ba</td></tr>
+<tr>
+<td title='AListAllTestNG.testDelEnd_many()'><b>testDelEnd_many</b><br>Test class: AListAllTestNG</td>
+<td></td>
+<td>0</td>
+<td>AListAllTestNG@2a5ca609</td></tr>
+<tr>
+<td title='LList2WhiteNG.testDelEnd_many()'><b>testDelEnd_many</b><br>Test class: LList2WhiteNG</td>
+<td></td>
+<td>0</td>
+<td>LList2WhiteNG@5c7fa833</td></tr>
+<tr>
+<td title='AListAllTestNG.testDelEndt_2()'><b>testDelEndt_2</b><br>Test class: AListAllTestNG</td>
+<td></td>
+<td>0</td>
+<td>AListAllTestNG@20e2cbe0</td></tr>
+<tr>
+<td title='AListAllTestNG.testDelEndt_2()'><b>testDelEndt_2</b><br>Test class: AListAllTestNG</td>
+<td></td>
+<td>0</td>
+<td>AListAllTestNG@2a2d45ba</td></tr>
+<tr>
+<td title='AListAllTestNG.testDelEndt_2()'><b>testDelEndt_2</b><br>Test class: AListAllTestNG</td>
+<td></td>
+<td>0</td>
+<td>AListAllTestNG@2a5ca609</td></tr>
+<tr>
+<td title='AListAllTestNG.testDelPos_1_1()'><b>testDelPos_1_1</b><br>Test class: AListAllTestNG</td>
+<td><div><pre>java.lang.IllegalArgumentException
+	at AList2.delPos(AList2.java:320)
+	at AListAllTestNG.testDelPos_1_1(AListAllTestNG.java:628)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2104545713", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2104545713'><pre>java.lang.IllegalArgumentException
+	at AList2.delPos(AList2.java:320)
+	at AListAllTestNG.testDelPos_1_1(AListAllTestNG.java:628)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+</pre></div></td>
+<td>0</td>
+<td>AListAllTestNG@20e2cbe0</td></tr>
+<tr>
+<td title='AListAllTestNG.testDelPos_1_1()'><b>testDelPos_1_1</b><br>Test class: AListAllTestNG</td>
+<td><div><pre>java.lang.IllegalArgumentException
+	at AList0.delPos(AList0.java:261)
+	at AListAllTestNG.testDelPos_1_1(AListAllTestNG.java:628)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1039949752", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1039949752'><pre>java.lang.IllegalArgumentException
+	at AList0.delPos(AList0.java:261)
+	at AListAllTestNG.testDelPos_1_1(AListAllTestNG.java:628)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+</pre></div></td>
+<td>0</td>
+<td>AListAllTestNG@2a2d45ba</td></tr>
+<tr>
+<td title='AListAllTestNG.testDelPos_1_1()'><b>testDelPos_1_1</b><br>Test class: AListAllTestNG</td>
+<td><div><pre>java.lang.IllegalArgumentException
+	at AList1.delPos(AList1.java:267)
+	at AListAllTestNG.testDelPos_1_1(AListAllTestNG.java:628)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2116908859", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2116908859'><pre>java.lang.IllegalArgumentException
+	at AList1.delPos(AList1.java:267)
+	at AListAllTestNG.testDelPos_1_1(AListAllTestNG.java:628)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+</pre></div></td>
+<td>0</td>
+<td>AListAllTestNG@2a5ca609</td></tr>
+<tr>
+<td title='AListAllTestNG.testDelPos_1_2()'><b>testDelPos_1_2</b><br>Test class: AListAllTestNG</td>
+<td></td>
+<td>0</td>
+<td>AListAllTestNG@20e2cbe0</td></tr>
+<tr>
+<td title='AListAllTestNG.testDelPos_1_2()'><b>testDelPos_1_2</b><br>Test class: AListAllTestNG</td>
+<td></td>
+<td>0</td>
+<td>AListAllTestNG@2a2d45ba</td></tr>
+<tr>
+<td title='AListAllTestNG.testDelPos_1_2()'><b>testDelPos_1_2</b><br>Test class: AListAllTestNG</td>
+<td></td>
+<td>0</td>
+<td>AListAllTestNG@2a5ca609</td></tr>
+<tr>
+<td title='LList2WhiteNG.testDelPos_1_2()'><b>testDelPos_1_2</b><br>Test class: LList2WhiteNG</td>
+<td></td>
+<td>0</td>
+<td>LList2WhiteNG@5c7fa833</td></tr>
+<tr>
+<td title='AListAllTestNG.testDelPos_2_1()'><b>testDelPos_2_1</b><br>Test class: AListAllTestNG</td>
+<td><div><pre>java.lang.IllegalArgumentException
+	at AList2.delPos(AList2.java:320)
+	at AListAllTestNG.testDelPos_2_1(AListAllTestNG.java:646)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1123629720", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1123629720'><pre>java.lang.IllegalArgumentException
+	at AList2.delPos(AList2.java:320)
+	at AListAllTestNG.testDelPos_2_1(AListAllTestNG.java:646)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+</pre></div></td>
+<td>0</td>
+<td>AListAllTestNG@20e2cbe0</td></tr>
+<tr>
+<td title='AListAllTestNG.testDelPos_2_1()'><b>testDelPos_2_1</b><br>Test class: AListAllTestNG</td>
+<td><div><pre>java.lang.IllegalArgumentException
+	at AList0.delPos(AList0.java:261)
+	at AListAllTestNG.testDelPos_2_1(AListAllTestNG.java:646)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1032986144", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1032986144'><pre>java.lang.IllegalArgumentException
+	at AList0.delPos(AList0.java:261)
+	at AListAllTestNG.testDelPos_2_1(AListAllTestNG.java:646)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+</pre></div></td>
+<td>0</td>
+<td>AListAllTestNG@2a2d45ba</td></tr>
+<tr>
+<td title='AListAllTestNG.testDelPos_2_1()'><b>testDelPos_2_1</b><br>Test class: AListAllTestNG</td>
+<td><div><pre>java.lang.IllegalArgumentException
+	at AList1.delPos(AList1.java:267)
+	at AListAllTestNG.testDelPos_2_1(AListAllTestNG.java:646)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace438135304", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace438135304'><pre>java.lang.IllegalArgumentException
+	at AList1.delPos(AList1.java:267)
+	at AListAllTestNG.testDelPos_2_1(AListAllTestNG.java:646)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+</pre></div></td>
+<td>0</td>
+<td>AListAllTestNG@2a5ca609</td></tr>
+<tr>
+<td title='AListAllTestNG.testDelPos_2_2()'><b>testDelPos_2_2</b><br>Test class: AListAllTestNG</td>
+<td></td>
+<td>0</td>
+<td>AListAllTestNG@20e2cbe0</td></tr>
+<tr>
+<td title='AListAllTestNG.testDelPos_2_2()'><b>testDelPos_2_2</b><br>Test class: AListAllTestNG</td>
+<td></td>
+<td>0</td>
+<td>AListAllTestNG@2a2d45ba</td></tr>
+<tr>
+<td title='AListAllTestNG.testDelPos_2_2()'><b>testDelPos_2_2</b><br>Test class: AListAllTestNG</td>
+<td></td>
+<td>0</td>
+<td>AListAllTestNG@2a5ca609</td></tr>
+<tr>
+<td title='LList2WhiteNG.testDelPos_2_2()'><b>testDelPos_2_2</b><br>Test class: LList2WhiteNG</td>
+<td></td>
+<td>0</td>
+<td>LList2WhiteNG@5c7fa833</td></tr>
+<tr>
+<td title='AListAllTestNG.testDelPos_2_3()'><b>testDelPos_2_3</b><br>Test class: AListAllTestNG</td>
+<td></td>
+<td>0</td>
+<td>AListAllTestNG@20e2cbe0</td></tr>
+<tr>
+<td title='AListAllTestNG.testDelPos_2_3()'><b>testDelPos_2_3</b><br>Test class: AListAllTestNG</td>
+<td></td>
+<td>0</td>
+<td>AListAllTestNG@2a2d45ba</td></tr>
+<tr>
+<td title='AListAllTestNG.testDelPos_2_3()'><b>testDelPos_2_3</b><br>Test class: AListAllTestNG</td>
+<td></td>
+<td>0</td>
+<td>AListAllTestNG@2a5ca609</td></tr>
+<tr>
+<td title='LList2WhiteNG.testDelPos_2_3()'><b>testDelPos_2_3</b><br>Test class: LList2WhiteNG</td>
+<td></td>
+<td>0</td>
+<td>LList2WhiteNG@5c7fa833</td></tr>
+<tr>
+<td title='AListAllTestNG.testDelPos_many_1()'><b>testDelPos_many_1</b><br>Test class: AListAllTestNG</td>
+<td></td>
+<td>0</td>
+<td>AListAllTestNG@20e2cbe0</td></tr>
+<tr>
+<td title='AListAllTestNG.testDelPos_many_1()'><b>testDelPos_many_1</b><br>Test class: AListAllTestNG</td>
+<td></td>
+<td>0</td>
+<td>AListAllTestNG@2a2d45ba</td></tr>
+<tr>
+<td title='AListAllTestNG.testDelPos_many_1()'><b>testDelPos_many_1</b><br>Test class: AListAllTestNG</td>
+<td></td>
+<td>0</td>
+<td>AListAllTestNG@2a5ca609</td></tr>
+<tr>
+<td title='LList2WhiteNG.testDelPos_many_1()'><b>testDelPos_many_1</b><br>Test class: LList2WhiteNG</td>
+<td></td>
+<td>0</td>
+<td>LList2WhiteNG@5c7fa833</td></tr>
+<tr>
+<td title='AListAllTestNG.testDelPos_many_2()'><b>testDelPos_many_2</b><br>Test class: AListAllTestNG</td>
+<td></td>
+<td>0</td>
+<td>AListAllTestNG@20e2cbe0</td></tr>
+<tr>
+<td title='AListAllTestNG.testDelPos_many_2()'><b>testDelPos_many_2</b><br>Test class: AListAllTestNG</td>
+<td></td>
+<td>0</td>
+<td>AListAllTestNG@2a2d45ba</td></tr>
+<tr>
+<td title='AListAllTestNG.testDelPos_many_2()'><b>testDelPos_many_2</b><br>Test class: AListAllTestNG</td>
+<td></td>
+<td>0</td>
+<td>AListAllTestNG@2a5ca609</td></tr>
+<tr>
+<td title='LList2WhiteNG.testDelPos_many_2()'><b>testDelPos_many_2</b><br>Test class: LList2WhiteNG</td>
+<td></td>
+<td>0</td>
+<td>LList2WhiteNG@5c7fa833</td></tr>
+<tr>
+<td title='AListAllTestNG.testDelPos_many_3()'><b>testDelPos_many_3</b><br>Test class: AListAllTestNG</td>
+<td></td>
+<td>0</td>
+<td>AListAllTestNG@20e2cbe0</td></tr>
+<tr>
+<td title='AListAllTestNG.testDelPos_many_3()'><b>testDelPos_many_3</b><br>Test class: AListAllTestNG</td>
+<td></td>
+<td>0</td>
+<td>AListAllTestNG@2a2d45ba</td></tr>
+<tr>
+<td title='AListAllTestNG.testDelPos_many_3()'><b>testDelPos_many_3</b><br>Test class: AListAllTestNG</td>
+<td></td>
+<td>0</td>
+<td>AListAllTestNG@2a5ca609</td></tr>
+<tr>
+<td title='LList2WhiteNG.testDelPos_many_3()'><b>testDelPos_many_3</b><br>Test class: LList2WhiteNG</td>
+<td></td>
+<td>0</td>
+<td>LList2WhiteNG@5c7fa833</td></tr>
+<tr>
+<td title='AListAllTestNG.testDelPos_many_ex()'><b>testDelPos_many_ex</b><br>Test class: AListAllTestNG</td>
+<td><div><pre>java.lang.IllegalArgumentException
+	at AList2.delPos(AList2.java:320)
+	at AListAllTestNG.testDelPos_many_ex(AListAllTestNG.java:674)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace19717364", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace19717364'><pre>java.lang.IllegalArgumentException
+	at AList2.delPos(AList2.java:320)
+	at AListAllTestNG.testDelPos_many_ex(AListAllTestNG.java:674)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+</pre></div></td>
+<td>0</td>
+<td>AListAllTestNG@20e2cbe0</td></tr>
+<tr>
+<td title='AListAllTestNG.testDelPos_many_ex()'><b>testDelPos_many_ex</b><br>Test class: AListAllTestNG</td>
+<td><div><pre>java.lang.IllegalArgumentException
+	at AList0.delPos(AList0.java:261)
+	at AListAllTestNG.testDelPos_many_ex(AListAllTestNG.java:674)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2619171", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2619171'><pre>java.lang.IllegalArgumentException
+	at AList0.delPos(AList0.java:261)
+	at AListAllTestNG.testDelPos_many_ex(AListAllTestNG.java:674)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+</pre></div></td>
+<td>0</td>
+<td>AListAllTestNG@2a2d45ba</td></tr>
+<tr>
+<td title='AListAllTestNG.testDelPos_many_ex()'><b>testDelPos_many_ex</b><br>Test class: AListAllTestNG</td>
+<td><div><pre>java.lang.IllegalArgumentException
+	at AList1.delPos(AList1.java:267)
+	at AListAllTestNG.testDelPos_many_ex(AListAllTestNG.java:674)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1154002927", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1154002927'><pre>java.lang.IllegalArgumentException
+	at AList1.delPos(AList1.java:267)
+	at AListAllTestNG.testDelPos_many_ex(AListAllTestNG.java:674)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+</pre></div></td>
+<td>0</td>
+<td>AListAllTestNG@2a5ca609</td></tr>
+<tr>
+<td title='AListAllTestNG.testDelPost_0()'><b>testDelPost_0</b><br>Test class: AListAllTestNG</td>
+<td><div><pre>java.lang.IllegalArgumentException
+	at AList2.delPos(AList2.java:320)
+	at AListAllTestNG.testDelPost_0(AListAllTestNG.java:620)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace317986356", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace317986356'><pre>java.lang.IllegalArgumentException
+	at AList2.delPos(AList2.java:320)
+	at AListAllTestNG.testDelPost_0(AListAllTestNG.java:620)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+</pre></div></td>
+<td>0</td>
+<td>AListAllTestNG@20e2cbe0</td></tr>
+<tr>
+<td title='AListAllTestNG.testDelPost_0()'><b>testDelPost_0</b><br>Test class: AListAllTestNG</td>
+<td><div><pre>java.lang.IllegalArgumentException
+	at AList0.delPos(AList0.java:261)
+	at AListAllTestNG.testDelPost_0(AListAllTestNG.java:620)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace924477420", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace924477420'><pre>java.lang.IllegalArgumentException
+	at AList0.delPos(AList0.java:261)
+	at AListAllTestNG.testDelPost_0(AListAllTestNG.java:620)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+</pre></div></td>
+<td>0</td>
+<td>AListAllTestNG@2a2d45ba</td></tr>
+<tr>
+<td title='AListAllTestNG.testDelPost_0()'><b>testDelPost_0</b><br>Test class: AListAllTestNG</td>
+<td><div><pre>java.lang.IllegalArgumentException
+	at AList1.delPos(AList1.java:267)
+	at AListAllTestNG.testDelPost_0(AListAllTestNG.java:620)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2050835901", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2050835901'><pre>java.lang.IllegalArgumentException
+	at AList1.delPos(AList1.java:267)
+	at AListAllTestNG.testDelPost_0(AListAllTestNG.java:620)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+</pre></div></td>
+<td>0</td>
+<td>AListAllTestNG@2a5ca609</td></tr>
+<tr>
+<td title='AListAllTestNG.testDelStart_0()'><b>testDelStart_0</b><br>Test class: AListAllTestNG</td>
+<td><div><pre>java.lang.IllegalArgumentException
+	at AList0.delStart(AList0.java:227)
+	at AListAllTestNG.testDelStart_0(AListAllTestNG.java:536)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace439904756", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace439904756'><pre>java.lang.IllegalArgumentException
+	at AList0.delStart(AList0.java:227)
+	at AListAllTestNG.testDelStart_0(AListAllTestNG.java:536)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+</pre></div></td>
+<td>0</td>
+<td>AListAllTestNG@20e2cbe0</td></tr>
+<tr>
+<td title='AListAllTestNG.testDelStart_0()'><b>testDelStart_0</b><br>Test class: AListAllTestNG</td>
+<td><div><pre>java.lang.IllegalArgumentException
+	at AList0.delStart(AList0.java:227)
+	at AListAllTestNG.testDelStart_0(AListAllTestNG.java:536)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1665404403", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1665404403'><pre>java.lang.IllegalArgumentException
+	at AList0.delStart(AList0.java:227)
+	at AListAllTestNG.testDelStart_0(AListAllTestNG.java:536)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+</pre></div></td>
+<td>0</td>
+<td>AListAllTestNG@2a2d45ba</td></tr>
+<tr>
+<td title='AListAllTestNG.testDelStart_0()'><b>testDelStart_0</b><br>Test class: AListAllTestNG</td>
+<td><div><pre>java.lang.IllegalArgumentException
+	at AList0.delStart(AList0.java:227)
+	at AListAllTestNG.testDelStart_0(AListAllTestNG.java:536)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1295083508", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1295083508'><pre>java.lang.IllegalArgumentException
+	at AList0.delStart(AList0.java:227)
+	at AListAllTestNG.testDelStart_0(AListAllTestNG.java:536)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+</pre></div></td>
+<td>0</td>
+<td>AListAllTestNG@2a5ca609</td></tr>
+<tr>
+<td title='AListAllTestNG.testDelStart_2()'><b>testDelStart_2</b><br>Test class: AListAllTestNG</td>
+<td></td>
+<td>0</td>
+<td>AListAllTestNG@20e2cbe0</td></tr>
+<tr>
+<td title='AListAllTestNG.testDelStart_2()'><b>testDelStart_2</b><br>Test class: AListAllTestNG</td>
+<td></td>
+<td>0</td>
+<td>AListAllTestNG@2a2d45ba</td></tr>
+<tr>
+<td title='AListAllTestNG.testDelStart_2()'><b>testDelStart_2</b><br>Test class: AListAllTestNG</td>
+<td></td>
+<td>0</td>
+<td>AListAllTestNG@2a5ca609</td></tr>
+<tr>
+<td title='AListAllTestNG.testDelStart_many()'><b>testDelStart_many</b><br>Test class: AListAllTestNG</td>
+<td></td>
+<td>0</td>
+<td>AListAllTestNG@20e2cbe0</td></tr>
+<tr>
+<td title='AListAllTestNG.testDelStart_many()'><b>testDelStart_many</b><br>Test class: AListAllTestNG</td>
+<td></td>
+<td>0</td>
+<td>AListAllTestNG@2a2d45ba</td></tr>
+<tr>
+<td title='AListAllTestNG.testDelStart_many()'><b>testDelStart_many</b><br>Test class: AListAllTestNG</td>
+<td></td>
+<td>0</td>
+<td>AListAllTestNG@2a5ca609</td></tr>
+<tr>
+<td title='LList2WhiteNG.testDellStart_1()'><b>testDellStart_1</b><br>Test class: LList2WhiteNG</td>
+<td></td>
+<td>0</td>
+<td>LList2WhiteNG@5c7fa833</td></tr>
+<tr>
+<td title='LList2WhiteNG.testDellStart_2()'><b>testDellStart_2</b><br>Test class: LList2WhiteNG</td>
+<td></td>
+<td>0</td>
+<td>LList2WhiteNG@5c7fa833</td></tr>
+<tr>
+<td title='LList2WhiteNG.testDellstart_many()'><b>testDellstart_many</b><br>Test class: LList2WhiteNG</td>
+<td></td>
+<td>0</td>
+<td>LList2WhiteNG@5c7fa833</td></tr>
+<tr>
+<td title='AListAllTestNG.testGet_0()'><b>testGet_0</b><br>Test class: AListAllTestNG</td>
+<td><div><pre>java.lang.IllegalArgumentException
+	at AList0.get(AList0.java:283)
+	at AListAllTestNG.testGet_0(AListAllTestNG.java:716)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1177377518", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1177377518'><pre>java.lang.IllegalArgumentException
+	at AList0.get(AList0.java:283)
+	at AListAllTestNG.testGet_0(AListAllTestNG.java:716)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+</pre></div></td>
+<td>0</td>
+<td>AListAllTestNG@20e2cbe0</td></tr>
+<tr>
+<td title='AListAllTestNG.testGet_0()'><b>testGet_0</b><br>Test class: AListAllTestNG</td>
+<td><div><pre>java.lang.IllegalArgumentException
+	at AList0.get(AList0.java:283)
+	at AListAllTestNG.testGet_0(AListAllTestNG.java:716)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1250391581", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1250391581'><pre>java.lang.IllegalArgumentException
+	at AList0.get(AList0.java:283)
+	at AListAllTestNG.testGet_0(AListAllTestNG.java:716)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+</pre></div></td>
+<td>0</td>
+<td>AListAllTestNG@2a2d45ba</td></tr>
+<tr>
+<td title='AListAllTestNG.testGet_0()'><b>testGet_0</b><br>Test class: AListAllTestNG</td>
+<td><div><pre>java.lang.IllegalArgumentException
+	at AList0.get(AList0.java:283)
+	at AListAllTestNG.testGet_0(AListAllTestNG.java:716)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace926370398", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace926370398'><pre>java.lang.IllegalArgumentException
+	at AList0.get(AList0.java:283)
+	at AListAllTestNG.testGet_0(AListAllTestNG.java:716)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+</pre></div></td>
+<td>0</td>
+<td>AListAllTestNG@2a5ca609</td></tr>
+<tr>
+<td title='AListAllTestNG.testGet_1_1()'><b>testGet_1_1</b><br>Test class: AListAllTestNG</td>
+<td><div><pre>java.lang.IllegalArgumentException
+	at AList0.get(AList0.java:283)
+	at AListAllTestNG.testGet_1_1(AListAllTestNG.java:724)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace110431793", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace110431793'><pre>java.lang.IllegalArgumentException
+	at AList0.get(AList0.java:283)
+	at AListAllTestNG.testGet_1_1(AListAllTestNG.java:724)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+</pre></div></td>
+<td>0</td>
+<td>AListAllTestNG@20e2cbe0</td></tr>
+<tr>
+<td title='AListAllTestNG.testGet_1_1()'><b>testGet_1_1</b><br>Test class: AListAllTestNG</td>
+<td><div><pre>java.lang.IllegalArgumentException
+	at AList0.get(AList0.java:283)
+	at AListAllTestNG.testGet_1_1(AListAllTestNG.java:724)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1391942103", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1391942103'><pre>java.lang.IllegalArgumentException
+	at AList0.get(AList0.java:283)
+	at AListAllTestNG.testGet_1_1(AListAllTestNG.java:724)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+</pre></div></td>
+<td>0</td>
+<td>AListAllTestNG@2a2d45ba</td></tr>
+<tr>
+<td title='AListAllTestNG.testGet_1_1()'><b>testGet_1_1</b><br>Test class: AListAllTestNG</td>
+<td><div><pre>java.lang.IllegalArgumentException
+	at AList0.get(AList0.java:283)
+	at AListAllTestNG.testGet_1_1(AListAllTestNG.java:724)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1053631449", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1053631449'><pre>java.lang.IllegalArgumentException
+	at AList0.get(AList0.java:283)
+	at AListAllTestNG.testGet_1_1(AListAllTestNG.java:724)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+</pre></div></td>
+<td>0</td>
+<td>AListAllTestNG@2a5ca609</td></tr>
+<tr>
+<td title='AListAllTestNG.testGet_1_2()'><b>testGet_1_2</b><br>Test class: AListAllTestNG</td>
+<td></td>
+<td>0</td>
+<td>AListAllTestNG@20e2cbe0</td></tr>
+<tr>
+<td title='AListAllTestNG.testGet_1_2()'><b>testGet_1_2</b><br>Test class: AListAllTestNG</td>
+<td></td>
+<td>0</td>
+<td>AListAllTestNG@2a2d45ba</td></tr>
+<tr>
+<td title='AListAllTestNG.testGet_1_2()'><b>testGet_1_2</b><br>Test class: AListAllTestNG</td>
+<td></td>
+<td>0</td>
+<td>AListAllTestNG@2a5ca609</td></tr>
+<tr>
+<td title='AListAllTestNG.testGet_2_1()'><b>testGet_2_1</b><br>Test class: AListAllTestNG</td>
+<td><div><pre>java.lang.IllegalArgumentException
+	at AList0.get(AList0.java:283)
+	at AListAllTestNG.testGet_2_1(AListAllTestNG.java:741)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace149047107", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace149047107'><pre>java.lang.IllegalArgumentException
+	at AList0.get(AList0.java:283)
+	at AListAllTestNG.testGet_2_1(AListAllTestNG.java:741)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+</pre></div></td>
+<td>0</td>
+<td>AListAllTestNG@20e2cbe0</td></tr>
+<tr>
+<td title='AListAllTestNG.testGet_2_1()'><b>testGet_2_1</b><br>Test class: AListAllTestNG</td>
+<td><div><pre>java.lang.IllegalArgumentException
+	at AList0.get(AList0.java:283)
+	at AListAllTestNG.testGet_2_1(AListAllTestNG.java:741)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace682376643", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace682376643'><pre>java.lang.IllegalArgumentException
+	at AList0.get(AList0.java:283)
+	at AListAllTestNG.testGet_2_1(AListAllTestNG.java:741)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+</pre></div></td>
+<td>0</td>
+<td>AListAllTestNG@2a2d45ba</td></tr>
+<tr>
+<td title='AListAllTestNG.testGet_2_1()'><b>testGet_2_1</b><br>Test class: AListAllTestNG</td>
+<td><div><pre>java.lang.IllegalArgumentException
+	at AList0.get(AList0.java:283)
+	at AListAllTestNG.testGet_2_1(AListAllTestNG.java:741)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace490150701", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace490150701'><pre>java.lang.IllegalArgumentException
+	at AList0.get(AList0.java:283)
+	at AListAllTestNG.testGet_2_1(AListAllTestNG.java:741)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+</pre></div></td>
+<td>0</td>
+<td>AListAllTestNG@2a5ca609</td></tr>
+<tr>
+<td title='AListAllTestNG.testGet_2_2()'><b>testGet_2_2</b><br>Test class: AListAllTestNG</td>
+<td></td>
+<td>0</td>
+<td>AListAllTestNG@20e2cbe0</td></tr>
+<tr>
+<td title='AListAllTestNG.testGet_2_2()'><b>testGet_2_2</b><br>Test class: AListAllTestNG</td>
+<td></td>
+<td>0</td>
+<td>AListAllTestNG@2a2d45ba</td></tr>
+<tr>
+<td title='AListAllTestNG.testGet_2_2()'><b>testGet_2_2</b><br>Test class: AListAllTestNG</td>
+<td></td>
+<td>0</td>
+<td>AListAllTestNG@2a5ca609</td></tr>
+<tr>
+<td title='AListAllTestNG.testGet_many_1()'><b>testGet_many_1</b><br>Test class: AListAllTestNG</td>
+<td></td>
+<td>0</td>
+<td>AListAllTestNG@20e2cbe0</td></tr>
+<tr>
+<td title='AListAllTestNG.testGet_many_1()'><b>testGet_many_1</b><br>Test class: AListAllTestNG</td>
+<td></td>
+<td>0</td>
+<td>AListAllTestNG@2a2d45ba</td></tr>
+<tr>
+<td title='AListAllTestNG.testGet_many_1()'><b>testGet_many_1</b><br>Test class: AListAllTestNG</td>
+<td></td>
+<td>0</td>
+<td>AListAllTestNG@2a5ca609</td></tr>
+<tr>
+<td title='AListAllTestNG.testGet_many_ex()'><b>testGet_many_ex</b><br>Test class: AListAllTestNG</td>
+<td><div><pre>java.lang.IllegalArgumentException
+	at AList0.get(AList0.java:283)
+	at AListAllTestNG.testGet_many_ex(AListAllTestNG.java:758)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace770189387", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace770189387'><pre>java.lang.IllegalArgumentException
+	at AList0.get(AList0.java:283)
+	at AListAllTestNG.testGet_many_ex(AListAllTestNG.java:758)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+</pre></div></td>
+<td>0</td>
+<td>AListAllTestNG@20e2cbe0</td></tr>
+<tr>
+<td title='AListAllTestNG.testGet_many_ex()'><b>testGet_many_ex</b><br>Test class: AListAllTestNG</td>
+<td><div><pre>java.lang.IllegalArgumentException
+	at AList0.get(AList0.java:283)
+	at AListAllTestNG.testGet_many_ex(AListAllTestNG.java:758)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace315138752", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace315138752'><pre>java.lang.IllegalArgumentException
+	at AList0.get(AList0.java:283)
+	at AListAllTestNG.testGet_many_ex(AListAllTestNG.java:758)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+</pre></div></td>
+<td>0</td>
+<td>AListAllTestNG@2a2d45ba</td></tr>
+<tr>
+<td title='AListAllTestNG.testGet_many_ex()'><b>testGet_many_ex</b><br>Test class: AListAllTestNG</td>
+<td><div><pre>java.lang.IllegalArgumentException
+	at AList0.get(AList0.java:283)
+	at AListAllTestNG.testGet_many_ex(AListAllTestNG.java:758)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace415186196", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace415186196'><pre>java.lang.IllegalArgumentException
+	at AList0.get(AList0.java:283)
+	at AListAllTestNG.testGet_many_ex(AListAllTestNG.java:758)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+</pre></div></td>
+<td>0</td>
+<td>AListAllTestNG@2a5ca609</td></tr>
+<tr>
+<td title='AListAllTestNG.testHalfReverse_0()'><b>testHalfReverse_0</b><br>Test class: AListAllTestNG</td>
+<td></td>
+<td>0</td>
+<td>AListAllTestNG@20e2cbe0</td></tr>
+<tr>
+<td title='AListAllTestNG.testHalfReverse_0()'><b>testHalfReverse_0</b><br>Test class: AListAllTestNG</td>
+<td></td>
+<td>0</td>
+<td>AListAllTestNG@2a2d45ba</td></tr>
+<tr>
+<td title='AListAllTestNG.testHalfReverse_0()'><b>testHalfReverse_0</b><br>Test class: AListAllTestNG</td>
+<td></td>
+<td>0</td>
+<td>AListAllTestNG@2a5ca609</td></tr>
+<tr>
+<td title='LList2WhiteNG.testHalfReverse_0()'><b>testHalfReverse_0</b><br>Test class: LList2WhiteNG</td>
+<td></td>
+<td>0</td>
+<td>LList2WhiteNG@5c7fa833</td></tr>
+<tr>
+<td title='AListAllTestNG.testHalfReverse_1()'><b>testHalfReverse_1</b><br>Test class: AListAllTestNG</td>
+<td></td>
+<td>0</td>
+<td>AListAllTestNG@20e2cbe0</td></tr>
+<tr>
+<td title='AListAllTestNG.testHalfReverse_1()'><b>testHalfReverse_1</b><br>Test class: AListAllTestNG</td>
+<td></td>
+<td>0</td>
+<td>AListAllTestNG@2a2d45ba</td></tr>
+<tr>
+<td title='AListAllTestNG.testHalfReverse_1()'><b>testHalfReverse_1</b><br>Test class: AListAllTestNG</td>
+<td></td>
+<td>0</td>
+<td>AListAllTestNG@2a5ca609</td></tr>
+<tr>
+<td title='LList2WhiteNG.testHalfReverse_1()'><b>testHalfReverse_1</b><br>Test class: LList2WhiteNG</td>
+<td></td>
+<td>0</td>
+<td>LList2WhiteNG@5c7fa833</td></tr>
+<tr>
+<td title='AListAllTestNG.testHalfReverse_2()'><b>testHalfReverse_2</b><br>Test class: AListAllTestNG</td>
+<td></td>
+<td>0</td>
+<td>AListAllTestNG@20e2cbe0</td></tr>
+<tr>
+<td title='AListAllTestNG.testHalfReverse_2()'><b>testHalfReverse_2</b><br>Test class: AListAllTestNG</td>
+<td></td>
+<td>0</td>
+<td>AListAllTestNG@2a2d45ba</td></tr>
+<tr>
+<td title='AListAllTestNG.testHalfReverse_2()'><b>testHalfReverse_2</b><br>Test class: AListAllTestNG</td>
+<td></td>
+<td>0</td>
+<td>AListAllTestNG@2a5ca609</td></tr>
+<tr>
+<td title='LList2WhiteNG.testHalfReverse_2()'><b>testHalfReverse_2</b><br>Test class: LList2WhiteNG</td>
+<td></td>
+<td>0</td>
+<td>LList2WhiteNG@5c7fa833</td></tr>
+<tr>
+<td title='LListTest1NG.testInt_0()'><b>testInt_0</b><br>Test class: LListTest1NG</td>
+<td></td>
+<td>0</td>
+<td>LListTest1NG@548b7f67</td></tr>
+<tr>
+<td title='LListTest1NG.testInt_0()'><b>testInt_0</b><br>Test class: LListTest1NG</td>
+<td></td>
+<td>0</td>
+<td>LListTest1NG@5ae9a829</td></tr>
+<tr>
+<td title='LListTest1NG.testInt_0()'><b>testInt_0</b><br>Test class: LListTest1NG</td>
+<td></td>
+<td>0</td>
+<td>LListTest1NG@6d8a00e3</td></tr>
+<tr>
+<td title='LList2WhiteNG.testInt_0()'><b>testInt_0</b><br>Test class: LList2WhiteNG</td>
+<td></td>
+<td>0</td>
+<td>LList2WhiteNG@5c7fa833</td></tr>
+<tr>
+<td title='LListTest1NG.testInt_1()'><b>testInt_1</b><br>Test class: LListTest1NG</td>
+<td></td>
+<td>0</td>
+<td>LListTest1NG@548b7f67</td></tr>
+<tr>
+<td title='LListTest1NG.testInt_1()'><b>testInt_1</b><br>Test class: LListTest1NG</td>
+<td></td>
+<td>0</td>
+<td>LListTest1NG@5ae9a829</td></tr>
+<tr>
+<td title='LListTest1NG.testInt_1()'><b>testInt_1</b><br>Test class: LListTest1NG</td>
+<td></td>
+<td>0</td>
+<td>LListTest1NG@6d8a00e3</td></tr>
+<tr>
+<td title='LList2WhiteNG.testInt_1()'><b>testInt_1</b><br>Test class: LList2WhiteNG</td>
+<td></td>
+<td>0</td>
+<td>LList2WhiteNG@5c7fa833</td></tr>
+<tr>
+<td title='LListTest1NG.testInt_constr()'><b>testInt_constr</b><br>Test class: LListTest1NG</td>
+<td></td>
+<td>0</td>
+<td>LListTest1NG@548b7f67</td></tr>
+<tr>
+<td title='LListTest1NG.testInt_constr()'><b>testInt_constr</b><br>Test class: LListTest1NG</td>
+<td></td>
+<td>0</td>
+<td>LListTest1NG@5ae9a829</td></tr>
+<tr>
+<td title='LListTest1NG.testInt_constr()'><b>testInt_constr</b><br>Test class: LListTest1NG</td>
+<td></td>
+<td>0</td>
+<td>LListTest1NG@6d8a00e3</td></tr>
+<tr>
+<td title='LListTest1NG.testInt_null()'><b>testInt_null</b><br>Test class: LListTest1NG</td>
+<td></td>
+<td>0</td>
+<td>LListTest1NG@548b7f67</td></tr>
+<tr>
+<td title='LListTest1NG.testInt_null()'><b>testInt_null</b><br>Test class: LListTest1NG</td>
+<td></td>
+<td>0</td>
+<td>LListTest1NG@5ae9a829</td></tr>
+<tr>
+<td title='LListTest1NG.testInt_null()'><b>testInt_null</b><br>Test class: LListTest1NG</td>
+<td></td>
+<td>0</td>
+<td>LListTest1NG@6d8a00e3</td></tr>
+<tr>
+<td title='LList2WhiteNG.testInt_null()'><b>testInt_null</b><br>Test class: LList2WhiteNG</td>
+<td></td>
+<td>0</td>
+<td>LList2WhiteNG@5c7fa833</td></tr>
+<tr>
+<td title='AListAllTestNG.testMaxInd_0_ex()'><b>testMaxInd_0_ex</b><br>Test class: AListAllTestNG</td>
+<td><div><pre>java.lang.IllegalArgumentException
+	at AList0.maxInd(AList0.java:133)
+	at AListAllTestNG.testMaxInd_0_ex(AListAllTestNG.java:217)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1885996206", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1885996206'><pre>java.lang.IllegalArgumentException
+	at AList0.maxInd(AList0.java:133)
+	at AListAllTestNG.testMaxInd_0_ex(AListAllTestNG.java:217)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+</pre></div></td>
+<td>0</td>
+<td>AListAllTestNG@20e2cbe0</td></tr>
+<tr>
+<td title='AListAllTestNG.testMaxInd_0_ex()'><b>testMaxInd_0_ex</b><br>Test class: AListAllTestNG</td>
+<td><div><pre>java.lang.IllegalArgumentException
+	at AList0.maxInd(AList0.java:133)
+	at AListAllTestNG.testMaxInd_0_ex(AListAllTestNG.java:217)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1739876329", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1739876329'><pre>java.lang.IllegalArgumentException
+	at AList0.maxInd(AList0.java:133)
+	at AListAllTestNG.testMaxInd_0_ex(AListAllTestNG.java:217)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+</pre></div></td>
+<td>0</td>
+<td>AListAllTestNG@2a2d45ba</td></tr>
+<tr>
+<td title='AListAllTestNG.testMaxInd_0_ex()'><b>testMaxInd_0_ex</b><br>Test class: AListAllTestNG</td>
+<td><div><pre>java.lang.IllegalArgumentException
+	at AList0.maxInd(AList0.java:133)
+	at AListAllTestNG.testMaxInd_0_ex(AListAllTestNG.java:217)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1293618474", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1293618474'><pre>java.lang.IllegalArgumentException
+	at AList0.maxInd(AList0.java:133)
+	at AListAllTestNG.testMaxInd_0_ex(AListAllTestNG.java:217)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+</pre></div></td>
+<td>0</td>
+<td>AListAllTestNG@2a5ca609</td></tr>
+<tr>
+<td title='AListAllTestNG.testMaxInd_1()'><b>testMaxInd_1</b><br>Test class: AListAllTestNG</td>
+<td></td>
+<td>0</td>
+<td>AListAllTestNG@20e2cbe0</td></tr>
+<tr>
+<td title='AListAllTestNG.testMaxInd_1()'><b>testMaxInd_1</b><br>Test class: AListAllTestNG</td>
+<td></td>
+<td>0</td>
+<td>AListAllTestNG@2a2d45ba</td></tr>
+<tr>
+<td title='AListAllTestNG.testMaxInd_1()'><b>testMaxInd_1</b><br>Test class: AListAllTestNG</td>
+<td></td>
+<td>0</td>
+<td>AListAllTestNG@2a5ca609</td></tr>
+<tr>
+<td title='AListAllTestNG.testMaxInd_2()'><b>testMaxInd_2</b><br>Test class: AListAllTestNG</td>
+<td></td>
+<td>0</td>
+<td>AListAllTestNG@20e2cbe0</td></tr>
+<tr>
+<td title='AListAllTestNG.testMaxInd_2()'><b>testMaxInd_2</b><br>Test class: AListAllTestNG</td>
+<td></td>
+<td>0</td>
+<td>AListAllTestNG@2a2d45ba</td></tr>
+<tr>
+<td title='AListAllTestNG.testMaxInd_2()'><b>testMaxInd_2</b><br>Test class: AListAllTestNG</td>
+<td></td>
+<td>0</td>
+<td>AListAllTestNG@2a5ca609</td></tr>
+<tr>
+<td title='AListAllTestNG.testMaxInd_many()'><b>testMaxInd_many</b><br>Test class: AListAllTestNG</td>
+<td></td>
+<td>0</td>
+<td>AListAllTestNG@20e2cbe0</td></tr>
+<tr>
+<td title='AListAllTestNG.testMaxInd_many()'><b>testMaxInd_many</b><br>Test class: AListAllTestNG</td>
+<td></td>
+<td>0</td>
+<td>AListAllTestNG@2a2d45ba</td></tr>
+<tr>
+<td title='AListAllTestNG.testMaxInd_many()'><b>testMaxInd_many</b><br>Test class: AListAllTestNG</td>
+<td></td>
+<td>0</td>
+<td>AListAllTestNG@2a5ca609</td></tr>
+<tr>
+<td title='AListAllTestNG.testMax_0_ex()'><b>testMax_0_ex</b><br>Test class: AListAllTestNG</td>
+<td><div><pre>java.lang.IllegalArgumentException
+	at AList0.max(AList0.java:99)
+	at AListAllTestNG.testMax_0_ex(AListAllTestNG.java:139)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace265119009", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace265119009'><pre>java.lang.IllegalArgumentException
+	at AList0.max(AList0.java:99)
+	at AListAllTestNG.testMax_0_ex(AListAllTestNG.java:139)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+</pre></div></td>
+<td>0</td>
+<td>AListAllTestNG@20e2cbe0</td></tr>
+<tr>
+<td title='AListAllTestNG.testMax_0_ex()'><b>testMax_0_ex</b><br>Test class: AListAllTestNG</td>
+<td><div><pre>java.lang.IllegalArgumentException
+	at AList0.max(AList0.java:99)
+	at AListAllTestNG.testMax_0_ex(AListAllTestNG.java:139)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace838411509", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace838411509'><pre>java.lang.IllegalArgumentException
+	at AList0.max(AList0.java:99)
+	at AListAllTestNG.testMax_0_ex(AListAllTestNG.java:139)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+</pre></div></td>
+<td>0</td>
+<td>AListAllTestNG@2a2d45ba</td></tr>
+<tr>
+<td title='AListAllTestNG.testMax_0_ex()'><b>testMax_0_ex</b><br>Test class: AListAllTestNG</td>
+<td><div><pre>java.lang.IllegalArgumentException
+	at AList0.max(AList0.java:99)
+	at AListAllTestNG.testMax_0_ex(AListAllTestNG.java:139)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1338841523", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1338841523'><pre>java.lang.IllegalArgumentException
+	at AList0.max(AList0.java:99)
+	at AListAllTestNG.testMax_0_ex(AListAllTestNG.java:139)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+</pre></div></td>
+<td>0</td>
+<td>AListAllTestNG@2a5ca609</td></tr>
+<tr>
+<td title='AListAllTestNG.testMax_1()'><b>testMax_1</b><br>Test class: AListAllTestNG</td>
+<td></td>
+<td>0</td>
+<td>AListAllTestNG@20e2cbe0</td></tr>
+<tr>
+<td title='AListAllTestNG.testMax_1()'><b>testMax_1</b><br>Test class: AListAllTestNG</td>
+<td></td>
+<td>0</td>
+<td>AListAllTestNG@2a2d45ba</td></tr>
+<tr>
+<td title='AListAllTestNG.testMax_1()'><b>testMax_1</b><br>Test class: AListAllTestNG</td>
+<td></td>
+<td>0</td>
+<td>AListAllTestNG@2a5ca609</td></tr>
+<tr>
+<td title='AListAllTestNG.testMax_2()'><b>testMax_2</b><br>Test class: AListAllTestNG</td>
+<td></td>
+<td>0</td>
+<td>AListAllTestNG@20e2cbe0</td></tr>
+<tr>
+<td title='AListAllTestNG.testMax_2()'><b>testMax_2</b><br>Test class: AListAllTestNG</td>
+<td></td>
+<td>0</td>
+<td>AListAllTestNG@2a2d45ba</td></tr>
+<tr>
+<td title='AListAllTestNG.testMax_2()'><b>testMax_2</b><br>Test class: AListAllTestNG</td>
+<td></td>
+<td>0</td>
+<td>AListAllTestNG@2a5ca609</td></tr>
+<tr>
+<td title='AListAllTestNG.testMax_many()'><b>testMax_many</b><br>Test class: AListAllTestNG</td>
+<td></td>
+<td>0</td>
+<td>AListAllTestNG@20e2cbe0</td></tr>
+<tr>
+<td title='AListAllTestNG.testMax_many()'><b>testMax_many</b><br>Test class: AListAllTestNG</td>
+<td></td>
+<td>0</td>
+<td>AListAllTestNG@2a2d45ba</td></tr>
+<tr>
+<td title='AListAllTestNG.testMax_many()'><b>testMax_many</b><br>Test class: AListAllTestNG</td>
+<td></td>
+<td>0</td>
+<td>AListAllTestNG@2a5ca609</td></tr>
+<tr>
+<td title='AListAllTestNG.testMinInd_0_ex()'><b>testMinInd_0_ex</b><br>Test class: AListAllTestNG</td>
+<td><div><pre>java.lang.IllegalArgumentException
+	at AList0.minInd(AList0.java:116)
+	at AListAllTestNG.testMinInd_0_ex(AListAllTestNG.java:178)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1484531981", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1484531981'><pre>java.lang.IllegalArgumentException
+	at AList0.minInd(AList0.java:116)
+	at AListAllTestNG.testMinInd_0_ex(AListAllTestNG.java:178)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+</pre></div></td>
+<td>0</td>
+<td>AListAllTestNG@20e2cbe0</td></tr>
+<tr>
+<td title='AListAllTestNG.testMinInd_0_ex()'><b>testMinInd_0_ex</b><br>Test class: AListAllTestNG</td>
+<td><div><pre>java.lang.IllegalArgumentException
+	at AList0.minInd(AList0.java:116)
+	at AListAllTestNG.testMinInd_0_ex(AListAllTestNG.java:178)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1412925683", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1412925683'><pre>java.lang.IllegalArgumentException
+	at AList0.minInd(AList0.java:116)
+	at AListAllTestNG.testMinInd_0_ex(AListAllTestNG.java:178)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+</pre></div></td>
+<td>0</td>
+<td>AListAllTestNG@2a2d45ba</td></tr>
+<tr>
+<td title='AListAllTestNG.testMinInd_0_ex()'><b>testMinInd_0_ex</b><br>Test class: AListAllTestNG</td>
+<td><div><pre>java.lang.IllegalArgumentException
+	at AList0.minInd(AList0.java:116)
+	at AListAllTestNG.testMinInd_0_ex(AListAllTestNG.java:178)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace369241501", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace369241501'><pre>java.lang.IllegalArgumentException
+	at AList0.minInd(AList0.java:116)
+	at AListAllTestNG.testMinInd_0_ex(AListAllTestNG.java:178)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+</pre></div></td>
+<td>0</td>
+<td>AListAllTestNG@2a5ca609</td></tr>
+<tr>
+<td title='AListAllTestNG.testMinInd_1()'><b>testMinInd_1</b><br>Test class: AListAllTestNG</td>
+<td></td>
+<td>0</td>
+<td>AListAllTestNG@20e2cbe0</td></tr>
+<tr>
+<td title='AListAllTestNG.testMinInd_1()'><b>testMinInd_1</b><br>Test class: AListAllTestNG</td>
+<td></td>
+<td>0</td>
+<td>AListAllTestNG@2a2d45ba</td></tr>
+<tr>
+<td title='AListAllTestNG.testMinInd_1()'><b>testMinInd_1</b><br>Test class: AListAllTestNG</td>
+<td></td>
+<td>0</td>
+<td>AListAllTestNG@2a5ca609</td></tr>
+<tr>
+<td title='AListAllTestNG.testMinInd_2()'><b>testMinInd_2</b><br>Test class: AListAllTestNG</td>
+<td></td>
+<td>0</td>
+<td>AListAllTestNG@20e2cbe0</td></tr>
+<tr>
+<td title='AListAllTestNG.testMinInd_2()'><b>testMinInd_2</b><br>Test class: AListAllTestNG</td>
+<td></td>
+<td>0</td>
+<td>AListAllTestNG@2a2d45ba</td></tr>
+<tr>
+<td title='AListAllTestNG.testMinInd_2()'><b>testMinInd_2</b><br>Test class: AListAllTestNG</td>
+<td></td>
+<td>0</td>
+<td>AListAllTestNG@2a5ca609</td></tr>
+<tr>
+<td title='AListAllTestNG.testMinInd_many()'><b>testMinInd_many</b><br>Test class: AListAllTestNG</td>
+<td></td>
+<td>0</td>
+<td>AListAllTestNG@20e2cbe0</td></tr>
+<tr>
+<td title='AListAllTestNG.testMinInd_many()'><b>testMinInd_many</b><br>Test class: AListAllTestNG</td>
+<td></td>
+<td>0</td>
+<td>AListAllTestNG@2a2d45ba</td></tr>
+<tr>
+<td title='AListAllTestNG.testMinInd_many()'><b>testMinInd_many</b><br>Test class: AListAllTestNG</td>
+<td></td>
+<td>0</td>
+<td>AListAllTestNG@2a5ca609</td></tr>
+<tr>
+<td title='AListAllTestNG.testMin_0_ex()'><b>testMin_0_ex</b><br>Test class: AListAllTestNG</td>
+<td><div><pre>java.lang.IllegalArgumentException
+	at AList0.min(AList0.java:32)
+	at AListAllTestNG.testMin_0_ex(AListAllTestNG.java:100)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1943325854", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1943325854'><pre>java.lang.IllegalArgumentException
+	at AList0.min(AList0.java:32)
+	at AListAllTestNG.testMin_0_ex(AListAllTestNG.java:100)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+</pre></div></td>
+<td>0</td>
+<td>AListAllTestNG@20e2cbe0</td></tr>
+<tr>
+<td title='AListAllTestNG.testMin_0_ex()'><b>testMin_0_ex</b><br>Test class: AListAllTestNG</td>
+<td><div><pre>java.lang.IllegalArgumentException
+	at AList0.min(AList0.java:32)
+	at AListAllTestNG.testMin_0_ex(AListAllTestNG.java:100)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace22805895", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace22805895'><pre>java.lang.IllegalArgumentException
+	at AList0.min(AList0.java:32)
+	at AListAllTestNG.testMin_0_ex(AListAllTestNG.java:100)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+</pre></div></td>
+<td>0</td>
+<td>AListAllTestNG@2a2d45ba</td></tr>
+<tr>
+<td title='AListAllTestNG.testMin_0_ex()'><b>testMin_0_ex</b><br>Test class: AListAllTestNG</td>
+<td><div><pre>java.lang.IllegalArgumentException
+	at AList0.min(AList0.java:32)
+	at AListAllTestNG.testMin_0_ex(AListAllTestNG.java:100)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1024429571", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1024429571'><pre>java.lang.IllegalArgumentException
+	at AList0.min(AList0.java:32)
+	at AListAllTestNG.testMin_0_ex(AListAllTestNG.java:100)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+</pre></div></td>
+<td>0</td>
+<td>AListAllTestNG@2a5ca609</td></tr>
+<tr>
+<td title='AListAllTestNG.testMin_1()'><b>testMin_1</b><br>Test class: AListAllTestNG</td>
+<td></td>
+<td>0</td>
+<td>AListAllTestNG@20e2cbe0</td></tr>
+<tr>
+<td title='AListAllTestNG.testMin_1()'><b>testMin_1</b><br>Test class: AListAllTestNG</td>
+<td></td>
+<td>0</td>
+<td>AListAllTestNG@2a2d45ba</td></tr>
+<tr>
+<td title='AListAllTestNG.testMin_1()'><b>testMin_1</b><br>Test class: AListAllTestNG</td>
+<td></td>
+<td>0</td>
+<td>AListAllTestNG@2a5ca609</td></tr>
+<tr>
+<td title='AListAllTestNG.testMin_2()'><b>testMin_2</b><br>Test class: AListAllTestNG</td>
+<td></td>
+<td>0</td>
+<td>AListAllTestNG@20e2cbe0</td></tr>
+<tr>
+<td title='AListAllTestNG.testMin_2()'><b>testMin_2</b><br>Test class: AListAllTestNG</td>
+<td></td>
+<td>0</td>
+<td>AListAllTestNG@2a2d45ba</td></tr>
+<tr>
+<td title='AListAllTestNG.testMin_2()'><b>testMin_2</b><br>Test class: AListAllTestNG</td>
+<td></td>
+<td>0</td>
+<td>AListAllTestNG@2a5ca609</td></tr>
+<tr>
+<td title='AListAllTestNG.testMin_many()'><b>testMin_many</b><br>Test class: AListAllTestNG</td>
+<td></td>
+<td>0</td>
+<td>AListAllTestNG@20e2cbe0</td></tr>
+<tr>
+<td title='AListAllTestNG.testMin_many()'><b>testMin_many</b><br>Test class: AListAllTestNG</td>
+<td></td>
+<td>0</td>
+<td>AListAllTestNG@2a2d45ba</td></tr>
+<tr>
+<td title='AListAllTestNG.testMin_many()'><b>testMin_many</b><br>Test class: AListAllTestNG</td>
+<td></td>
+<td>0</td>
+<td>AListAllTestNG@2a5ca609</td></tr>
+<tr>
+<td title='AListAllTestNG.testReverse_0()'><b>testReverse_0</b><br>Test class: AListAllTestNG</td>
+<td></td>
+<td>0</td>
+<td>AListAllTestNG@20e2cbe0</td></tr>
+<tr>
+<td title='AListAllTestNG.testReverse_0()'><b>testReverse_0</b><br>Test class: AListAllTestNG</td>
+<td></td>
+<td>0</td>
+<td>AListAllTestNG@2a2d45ba</td></tr>
+<tr>
+<td title='AListAllTestNG.testReverse_0()'><b>testReverse_0</b><br>Test class: AListAllTestNG</td>
+<td></td>
+<td>0</td>
+<td>AListAllTestNG@2a5ca609</td></tr>
+<tr>
+<td title='LList2WhiteNG.testReverse_0()'><b>testReverse_0</b><br>Test class: LList2WhiteNG</td>
+<td></td>
+<td>0</td>
+<td>LList2WhiteNG@5c7fa833</td></tr>
+<tr>
+<td title='AListAllTestNG.testReverse_1()'><b>testReverse_1</b><br>Test class: AListAllTestNG</td>
+<td></td>
+<td>0</td>
+<td>AListAllTestNG@20e2cbe0</td></tr>
+<tr>
+<td title='AListAllTestNG.testReverse_1()'><b>testReverse_1</b><br>Test class: AListAllTestNG</td>
+<td></td>
+<td>0</td>
+<td>AListAllTestNG@2a2d45ba</td></tr>
+<tr>
+<td title='AListAllTestNG.testReverse_1()'><b>testReverse_1</b><br>Test class: AListAllTestNG</td>
+<td></td>
+<td>0</td>
+<td>AListAllTestNG@2a5ca609</td></tr>
+<tr>
+<td title='LList2WhiteNG.testReverse_1()'><b>testReverse_1</b><br>Test class: LList2WhiteNG</td>
+<td></td>
+<td>0</td>
+<td>LList2WhiteNG@5c7fa833</td></tr>
+<tr>
+<td title='AListAllTestNG.testReverse_2()'><b>testReverse_2</b><br>Test class: AListAllTestNG</td>
+<td></td>
+<td>0</td>
+<td>AListAllTestNG@20e2cbe0</td></tr>
+<tr>
+<td title='AListAllTestNG.testReverse_2()'><b>testReverse_2</b><br>Test class: AListAllTestNG</td>
+<td></td>
+<td>0</td>
+<td>AListAllTestNG@2a2d45ba</td></tr>
+<tr>
+<td title='AListAllTestNG.testReverse_2()'><b>testReverse_2</b><br>Test class: AListAllTestNG</td>
+<td></td>
+<td>0</td>
+<td>AListAllTestNG@2a5ca609</td></tr>
+<tr>
+<td title='LList2WhiteNG.testReverse_2()'><b>testReverse_2</b><br>Test class: LList2WhiteNG</td>
+<td></td>
+<td>0</td>
+<td>LList2WhiteNG@5c7fa833</td></tr>
+<tr>
+<td title='AListAllTestNG.testReverse_many()'><b>testReverse_many</b><br>Test class: AListAllTestNG</td>
+<td></td>
+<td>0</td>
+<td>AListAllTestNG@20e2cbe0</td></tr>
+<tr>
+<td title='AListAllTestNG.testReverse_many()'><b>testReverse_many</b><br>Test class: AListAllTestNG</td>
+<td></td>
+<td>0</td>
+<td>AListAllTestNG@2a2d45ba</td></tr>
+<tr>
+<td title='AListAllTestNG.testReverse_many()'><b>testReverse_many</b><br>Test class: AListAllTestNG</td>
+<td></td>
+<td>0</td>
+<td>AListAllTestNG@2a5ca609</td></tr>
+<tr>
+<td title='LList2WhiteNG.testReverse_many()'><b>testReverse_many</b><br>Test class: LList2WhiteNG</td>
+<td></td>
+<td>0</td>
+<td>LList2WhiteNG@5c7fa833</td></tr>
+<tr>
+<td title='AListAllTestNG.testSet_0()'><b>testSet_0</b><br>Test class: AListAllTestNG</td>
+<td><div><pre>java.lang.IllegalArgumentException
+	at AList0.set(AList0.java:292)
+	at AListAllTestNG.testSet_0(AListAllTestNG.java:788)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace270397815", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace270397815'><pre>java.lang.IllegalArgumentException
+	at AList0.set(AList0.java:292)
+	at AListAllTestNG.testSet_0(AListAllTestNG.java:788)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+</pre></div></td>
+<td>0</td>
+<td>AListAllTestNG@20e2cbe0</td></tr>
+<tr>
+<td title='AListAllTestNG.testSet_0()'><b>testSet_0</b><br>Test class: AListAllTestNG</td>
+<td><div><pre>java.lang.IllegalArgumentException
+	at AList0.set(AList0.java:292)
+	at AListAllTestNG.testSet_0(AListAllTestNG.java:788)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace660879561", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace660879561'><pre>java.lang.IllegalArgumentException
+	at AList0.set(AList0.java:292)
+	at AListAllTestNG.testSet_0(AListAllTestNG.java:788)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+</pre></div></td>
+<td>0</td>
+<td>AListAllTestNG@2a2d45ba</td></tr>
+<tr>
+<td title='AListAllTestNG.testSet_0()'><b>testSet_0</b><br>Test class: AListAllTestNG</td>
+<td><div><pre>java.lang.IllegalArgumentException
+	at AList0.set(AList0.java:292)
+	at AListAllTestNG.testSet_0(AListAllTestNG.java:788)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2007331442", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2007331442'><pre>java.lang.IllegalArgumentException
+	at AList0.set(AList0.java:292)
+	at AListAllTestNG.testSet_0(AListAllTestNG.java:788)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+</pre></div></td>
+<td>0</td>
+<td>AListAllTestNG@2a5ca609</td></tr>
+<tr>
+<td title='AListAllTestNG.testSet_1_1()'><b>testSet_1_1</b><br>Test class: AListAllTestNG</td>
+<td><div><pre>java.lang.IllegalArgumentException
+	at AList0.set(AList0.java:292)
+	at AListAllTestNG.testSet_1_1(AListAllTestNG.java:796)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1848415041", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1848415041'><pre>java.lang.IllegalArgumentException
+	at AList0.set(AList0.java:292)
+	at AListAllTestNG.testSet_1_1(AListAllTestNG.java:796)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+</pre></div></td>
+<td>0</td>
+<td>AListAllTestNG@20e2cbe0</td></tr>
+<tr>
+<td title='AListAllTestNG.testSet_1_1()'><b>testSet_1_1</b><br>Test class: AListAllTestNG</td>
+<td><div><pre>java.lang.IllegalArgumentException
+	at AList0.set(AList0.java:292)
+	at AListAllTestNG.testSet_1_1(AListAllTestNG.java:796)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace339924917", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace339924917'><pre>java.lang.IllegalArgumentException
+	at AList0.set(AList0.java:292)
+	at AListAllTestNG.testSet_1_1(AListAllTestNG.java:796)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+</pre></div></td>
+<td>0</td>
+<td>AListAllTestNG@2a2d45ba</td></tr>
+<tr>
+<td title='AListAllTestNG.testSet_1_1()'><b>testSet_1_1</b><br>Test class: AListAllTestNG</td>
+<td><div><pre>java.lang.IllegalArgumentException
+	at AList0.set(AList0.java:292)
+	at AListAllTestNG.testSet_1_1(AListAllTestNG.java:796)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace124407148", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace124407148'><pre>java.lang.IllegalArgumentException
+	at AList0.set(AList0.java:292)
+	at AListAllTestNG.testSet_1_1(AListAllTestNG.java:796)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+</pre></div></td>
+<td>0</td>
+<td>AListAllTestNG@2a5ca609</td></tr>
+<tr>
+<td title='AListAllTestNG.testSet_1_2()'><b>testSet_1_2</b><br>Test class: AListAllTestNG</td>
+<td></td>
+<td>0</td>
+<td>AListAllTestNG@20e2cbe0</td></tr>
+<tr>
+<td title='AListAllTestNG.testSet_1_2()'><b>testSet_1_2</b><br>Test class: AListAllTestNG</td>
+<td></td>
+<td>0</td>
+<td>AListAllTestNG@2a2d45ba</td></tr>
+<tr>
+<td title='AListAllTestNG.testSet_1_2()'><b>testSet_1_2</b><br>Test class: AListAllTestNG</td>
+<td></td>
+<td>0</td>
+<td>AListAllTestNG@2a5ca609</td></tr>
+<tr>
+<td title='AListAllTestNG.testSet_2_1()'><b>testSet_2_1</b><br>Test class: AListAllTestNG</td>
+<td><div><pre>java.lang.IllegalArgumentException
+	at AList0.set(AList0.java:292)
+	at AListAllTestNG.testSet_2_1(AListAllTestNG.java:814)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1237598030", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1237598030'><pre>java.lang.IllegalArgumentException
+	at AList0.set(AList0.java:292)
+	at AListAllTestNG.testSet_2_1(AListAllTestNG.java:814)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+</pre></div></td>
+<td>0</td>
+<td>AListAllTestNG@20e2cbe0</td></tr>
+<tr>
+<td title='AListAllTestNG.testSet_2_1()'><b>testSet_2_1</b><br>Test class: AListAllTestNG</td>
+<td><div><pre>java.lang.IllegalArgumentException
+	at AList0.set(AList0.java:292)
+	at AListAllTestNG.testSet_2_1(AListAllTestNG.java:814)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace24606376", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace24606376'><pre>java.lang.IllegalArgumentException
+	at AList0.set(AList0.java:292)
+	at AListAllTestNG.testSet_2_1(AListAllTestNG.java:814)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+</pre></div></td>
+<td>0</td>
+<td>AListAllTestNG@2a2d45ba</td></tr>
+<tr>
+<td title='AListAllTestNG.testSet_2_1()'><b>testSet_2_1</b><br>Test class: AListAllTestNG</td>
+<td><div><pre>java.lang.IllegalArgumentException
+	at AList0.set(AList0.java:292)
+	at AListAllTestNG.testSet_2_1(AListAllTestNG.java:814)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace733672688", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace733672688'><pre>java.lang.IllegalArgumentException
+	at AList0.set(AList0.java:292)
+	at AListAllTestNG.testSet_2_1(AListAllTestNG.java:814)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+</pre></div></td>
+<td>0</td>
+<td>AListAllTestNG@2a5ca609</td></tr>
+<tr>
+<td title='AListAllTestNG.testSet_2_2()'><b>testSet_2_2</b><br>Test class: AListAllTestNG</td>
+<td></td>
+<td>0</td>
+<td>AListAllTestNG@20e2cbe0</td></tr>
+<tr>
+<td title='AListAllTestNG.testSet_2_2()'><b>testSet_2_2</b><br>Test class: AListAllTestNG</td>
+<td></td>
+<td>0</td>
+<td>AListAllTestNG@2a2d45ba</td></tr>
+<tr>
+<td title='AListAllTestNG.testSet_2_2()'><b>testSet_2_2</b><br>Test class: AListAllTestNG</td>
+<td></td>
+<td>0</td>
+<td>AListAllTestNG@2a5ca609</td></tr>
+<tr>
+<td title='AListAllTestNG.testSet_2_3()'><b>testSet_2_3</b><br>Test class: AListAllTestNG</td>
+<td></td>
+<td>0</td>
+<td>AListAllTestNG@20e2cbe0</td></tr>
+<tr>
+<td title='AListAllTestNG.testSet_2_3()'><b>testSet_2_3</b><br>Test class: AListAllTestNG</td>
+<td></td>
+<td>0</td>
+<td>AListAllTestNG@2a2d45ba</td></tr>
+<tr>
+<td title='AListAllTestNG.testSet_2_3()'><b>testSet_2_3</b><br>Test class: AListAllTestNG</td>
+<td></td>
+<td>0</td>
+<td>AListAllTestNG@2a5ca609</td></tr>
+<tr>
+<td title='AListAllTestNG.testSet_many_1()'><b>testSet_many_1</b><br>Test class: AListAllTestNG</td>
+<td></td>
+<td>0</td>
+<td>AListAllTestNG@20e2cbe0</td></tr>
+<tr>
+<td title='AListAllTestNG.testSet_many_1()'><b>testSet_many_1</b><br>Test class: AListAllTestNG</td>
+<td></td>
+<td>0</td>
+<td>AListAllTestNG@2a2d45ba</td></tr>
+<tr>
+<td title='AListAllTestNG.testSet_many_1()'><b>testSet_many_1</b><br>Test class: AListAllTestNG</td>
+<td></td>
+<td>0</td>
+<td>AListAllTestNG@2a5ca609</td></tr>
+<tr>
+<td title='AListAllTestNG.testSet_many_ex()'><b>testSet_many_ex</b><br>Test class: AListAllTestNG</td>
+<td><div><pre>java.lang.IllegalArgumentException
+	at AList0.set(AList0.java:292)
+	at AListAllTestNG.testSet_many_ex(AListAllTestNG.java:842)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1073533248", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1073533248'><pre>java.lang.IllegalArgumentException
+	at AList0.set(AList0.java:292)
+	at AListAllTestNG.testSet_many_ex(AListAllTestNG.java:842)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+</pre></div></td>
+<td>0</td>
+<td>AListAllTestNG@20e2cbe0</td></tr>
+<tr>
+<td title='AListAllTestNG.testSet_many_ex()'><b>testSet_many_ex</b><br>Test class: AListAllTestNG</td>
+<td><div><pre>java.lang.IllegalArgumentException
+	at AList0.set(AList0.java:292)
+	at AListAllTestNG.testSet_many_ex(AListAllTestNG.java:842)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace302870502", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace302870502'><pre>java.lang.IllegalArgumentException
+	at AList0.set(AList0.java:292)
+	at AListAllTestNG.testSet_many_ex(AListAllTestNG.java:842)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+</pre></div></td>
+<td>0</td>
+<td>AListAllTestNG@2a2d45ba</td></tr>
+<tr>
+<td title='AListAllTestNG.testSet_many_ex()'><b>testSet_many_ex</b><br>Test class: AListAllTestNG</td>
+<td><div><pre>java.lang.IllegalArgumentException
+	at AList0.set(AList0.java:292)
+	at AListAllTestNG.testSet_many_ex(AListAllTestNG.java:842)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace326298949", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace326298949'><pre>java.lang.IllegalArgumentException
+	at AList0.set(AList0.java:292)
+	at AListAllTestNG.testSet_many_ex(AListAllTestNG.java:842)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+</pre></div></td>
+<td>0</td>
+<td>AListAllTestNG@2a5ca609</td></tr>
+<tr>
+<td title='AListAllTestNG.testSet_null_ex()'><b>testSet_null_ex</b><br>Test class: AListAllTestNG</td>
+<td><div><pre>java.lang.IllegalArgumentException
+	at AList0.set(AList0.java:292)
+	at AListAllTestNG.testSet_null_ex(AListAllTestNG.java:779)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace624271064", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace624271064'><pre>java.lang.IllegalArgumentException
+	at AList0.set(AList0.java:292)
+	at AListAllTestNG.testSet_null_ex(AListAllTestNG.java:779)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+</pre></div></td>
+<td>0</td>
+<td>AListAllTestNG@20e2cbe0</td></tr>
+<tr>
+<td title='AListAllTestNG.testSet_null_ex()'><b>testSet_null_ex</b><br>Test class: AListAllTestNG</td>
+<td><div><pre>java.lang.IllegalArgumentException
+	at AList0.set(AList0.java:292)
+	at AListAllTestNG.testSet_null_ex(AListAllTestNG.java:779)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace135184888", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace135184888'><pre>java.lang.IllegalArgumentException
+	at AList0.set(AList0.java:292)
+	at AListAllTestNG.testSet_null_ex(AListAllTestNG.java:779)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+</pre></div></td>
+<td>0</td>
+<td>AListAllTestNG@2a2d45ba</td></tr>
+<tr>
+<td title='AListAllTestNG.testSet_null_ex()'><b>testSet_null_ex</b><br>Test class: AListAllTestNG</td>
+<td><div><pre>java.lang.IllegalArgumentException
+	at AList0.set(AList0.java:292)
+	at AListAllTestNG.testSet_null_ex(AListAllTestNG.java:779)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1816089958", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1816089958'><pre>java.lang.IllegalArgumentException
+	at AList0.set(AList0.java:292)
+	at AListAllTestNG.testSet_null_ex(AListAllTestNG.java:779)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+</pre></div></td>
+<td>0</td>
+<td>AListAllTestNG@2a5ca609</td></tr>
+<tr>
+<td title='AListAllTestNG.testSort_0()'><b>testSort_0</b><br>Test class: AListAllTestNG</td>
+<td></td>
+<td>0</td>
+<td>AListAllTestNG@20e2cbe0</td></tr>
+<tr>
+<td title='AListAllTestNG.testSort_0()'><b>testSort_0</b><br>Test class: AListAllTestNG</td>
+<td></td>
+<td>0</td>
+<td>AListAllTestNG@2a2d45ba</td></tr>
+<tr>
+<td title='AListAllTestNG.testSort_0()'><b>testSort_0</b><br>Test class: AListAllTestNG</td>
+<td></td>
+<td>0</td>
+<td>AListAllTestNG@2a5ca609</td></tr>
+<tr>
+<td title='LList2WhiteNG.testSort_0()'><b>testSort_0</b><br>Test class: LList2WhiteNG</td>
+<td></td>
+<td>0</td>
+<td>LList2WhiteNG@5c7fa833</td></tr>
+<tr>
+<td title='AListAllTestNG.testSort_1()'><b>testSort_1</b><br>Test class: AListAllTestNG</td>
+<td></td>
+<td>0</td>
+<td>AListAllTestNG@20e2cbe0</td></tr>
+<tr>
+<td title='AListAllTestNG.testSort_1()'><b>testSort_1</b><br>Test class: AListAllTestNG</td>
+<td></td>
+<td>0</td>
+<td>AListAllTestNG@2a2d45ba</td></tr>
+<tr>
+<td title='AListAllTestNG.testSort_1()'><b>testSort_1</b><br>Test class: AListAllTestNG</td>
+<td></td>
+<td>0</td>
+<td>AListAllTestNG@2a5ca609</td></tr>
+<tr>
+<td title='LList2WhiteNG.testSort_1()'><b>testSort_1</b><br>Test class: LList2WhiteNG</td>
+<td></td>
+<td>0</td>
+<td>LList2WhiteNG@5c7fa833</td></tr>
+<tr>
+<td title='AListAllTestNG.testSort_2()'><b>testSort_2</b><br>Test class: AListAllTestNG</td>
+<td></td>
+<td>0</td>
+<td>AListAllTestNG@20e2cbe0</td></tr>
+<tr>
+<td title='AListAllTestNG.testSort_2()'><b>testSort_2</b><br>Test class: AListAllTestNG</td>
+<td></td>
+<td>0</td>
+<td>AListAllTestNG@2a2d45ba</td></tr>
+<tr>
+<td title='AListAllTestNG.testSort_2()'><b>testSort_2</b><br>Test class: AListAllTestNG</td>
+<td></td>
+<td>0</td>
+<td>AListAllTestNG@2a5ca609</td></tr>
+<tr>
+<td title='LList2WhiteNG.testSort_2()'><b>testSort_2</b><br>Test class: LList2WhiteNG</td>
+<td></td>
+<td>0</td>
+<td>LList2WhiteNG@5c7fa833</td></tr>
+<tr>
+<td title='LList2WhiteNG.testSort_3()'><b>testSort_3</b><br>Test class: LList2WhiteNG</td>
+<td></td>
+<td>0</td>
+<td>LList2WhiteNG@5c7fa833</td></tr>
+<tr>
+<td title='LListTest1NG.testToArray_2()'><b>testToArray_2</b><br>Test class: LListTest1NG</td>
+<td></td>
+<td>0</td>
+<td>LListTest1NG@548b7f67</td></tr>
+<tr>
+<td title='LListTest1NG.testToArray_2()'><b>testToArray_2</b><br>Test class: LListTest1NG</td>
+<td></td>
+<td>0</td>
+<td>LListTest1NG@5ae9a829</td></tr>
+<tr>
+<td title='LListTest1NG.testToArray_2()'><b>testToArray_2</b><br>Test class: LListTest1NG</td>
+<td></td>
+<td>0</td>
+<td>LListTest1NG@6d8a00e3</td></tr>
+<tr>
+<td title='LList2WhiteNG.testToArray_2()'><b>testToArray_2</b><br>Test class: LList2WhiteNG</td>
+<td></td>
+<td>0</td>
+<td>LList2WhiteNG@5c7fa833</td></tr>
+<tr>
+<td title='LListTest1NG.testToArray_many()'><b>testToArray_many</b><br>Test class: LListTest1NG</td>
+<td></td>
+<td>0</td>
+<td>LListTest1NG@548b7f67</td></tr>
+<tr>
+<td title='LListTest1NG.testToArray_many()'><b>testToArray_many</b><br>Test class: LListTest1NG</td>
+<td></td>
+<td>0</td>
+<td>LListTest1NG@5ae9a829</td></tr>
+<tr>
+<td title='LListTest1NG.testToArray_many()'><b>testToArray_many</b><br>Test class: LListTest1NG</td>
+<td></td>
+<td>0</td>
+<td>LListTest1NG@6d8a00e3</td></tr>
+<tr>
+<td title='LList2WhiteNG.testToArray_many()'><b>testToArray_many</b><br>Test class: LList2WhiteNG</td>
+<td></td>
+<td>0</td>
+<td>LList2WhiteNG@5c7fa833</td></tr>
+<tr>
+<td title='AListAllTestNG.testToString_0()'><b>testToString_0</b><br>Test class: AListAllTestNG</td>
+<td></td>
+<td>0</td>
+<td>AListAllTestNG@20e2cbe0</td></tr>
+<tr>
+<td title='AListAllTestNG.testToString_0()'><b>testToString_0</b><br>Test class: AListAllTestNG</td>
+<td></td>
+<td>0</td>
+<td>AListAllTestNG@2a2d45ba</td></tr>
+<tr>
+<td title='AListAllTestNG.testToString_0()'><b>testToString_0</b><br>Test class: AListAllTestNG</td>
+<td></td>
+<td>0</td>
+<td>AListAllTestNG@2a5ca609</td></tr>
+<tr>
+<td title='AListAllTestNG.testToString_1()'><b>testToString_1</b><br>Test class: AListAllTestNG</td>
+<td></td>
+<td>0</td>
+<td>AListAllTestNG@20e2cbe0</td></tr>
+<tr>
+<td title='AListAllTestNG.testToString_1()'><b>testToString_1</b><br>Test class: AListAllTestNG</td>
+<td></td>
+<td>0</td>
+<td>AListAllTestNG@2a2d45ba</td></tr>
+<tr>
+<td title='AListAllTestNG.testToString_1()'><b>testToString_1</b><br>Test class: AListAllTestNG</td>
+<td></td>
+<td>0</td>
+<td>AListAllTestNG@2a5ca609</td></tr>
+<tr>
+<td title='AListAllTestNG.testToString_2()'><b>testToString_2</b><br>Test class: AListAllTestNG</td>
+<td></td>
+<td>0</td>
+<td>AListAllTestNG@20e2cbe0</td></tr>
+<tr>
+<td title='AListAllTestNG.testToString_2()'><b>testToString_2</b><br>Test class: AListAllTestNG</td>
+<td></td>
+<td>0</td>
+<td>AListAllTestNG@2a2d45ba</td></tr>
+<tr>
+<td title='AListAllTestNG.testToString_2()'><b>testToString_2</b><br>Test class: AListAllTestNG</td>
+<td></td>
+<td>0</td>
+<td>AListAllTestNG@2a5ca609</td></tr>
+<tr>
+<td title='AListAllTestNG.testToString_many()'><b>testToString_many</b><br>Test class: AListAllTestNG</td>
+<td></td>
+<td>0</td>
+<td>AListAllTestNG@20e2cbe0</td></tr>
+<tr>
+<td title='AListAllTestNG.testToString_many()'><b>testToString_many</b><br>Test class: AListAllTestNG</td>
+<td></td>
+<td>0</td>
+<td>AListAllTestNG@2a2d45ba</td></tr>
+<tr>
+<td title='AListAllTestNG.testToString_many()'><b>testToString_many</b><br>Test class: AListAllTestNG</td>
+<td></td>
+<td>0</td>
+<td>AListAllTestNG@2a5ca609</td></tr>
+<tr>
+<td title='AListAllTestNG.testToString_null()'><b>testToString_null</b><br>Test class: AListAllTestNG</td>
+<td></td>
+<td>0</td>
+<td>AListAllTestNG@20e2cbe0</td></tr>
+<tr>
+<td title='AListAllTestNG.testToString_null()'><b>testToString_null</b><br>Test class: AListAllTestNG</td>
+<td></td>
+<td>0</td>
+<td>AListAllTestNG@2a2d45ba</td></tr>
+<tr>
+<td title='AListAllTestNG.testToString_null()'><b>testToString_null</b><br>Test class: AListAllTestNG</td>
+<td></td>
+<td>0</td>
+<td>AListAllTestNG@2a5ca609</td></tr>
+<tr>
+<td title='AListAllTestNG.testdelEnd_1()'><b>testdelEnd_1</b><br>Test class: AListAllTestNG</td>
+<td></td>
+<td>0</td>
+<td>AListAllTestNG@20e2cbe0</td></tr>
+<tr>
+<td title='AListAllTestNG.testdelEnd_1()'><b>testdelEnd_1</b><br>Test class: AListAllTestNG</td>
+<td></td>
+<td>0</td>
+<td>AListAllTestNG@2a2d45ba</td></tr>
+<tr>
+<td title='AListAllTestNG.testdelEnd_1()'><b>testdelEnd_1</b><br>Test class: AListAllTestNG</td>
+<td></td>
+<td>0</td>
+<td>AListAllTestNG@2a5ca609</td></tr>
+<tr>
+<td title='AListAllTestNG.testdelStart_1()'><b>testdelStart_1</b><br>Test class: AListAllTestNG</td>
+<td></td>
+<td>0</td>
+<td>AListAllTestNG@20e2cbe0</td></tr>
+<tr>
+<td title='AListAllTestNG.testdelStart_1()'><b>testdelStart_1</b><br>Test class: AListAllTestNG</td>
+<td></td>
+<td>0</td>
+<td>AListAllTestNG@2a2d45ba</td></tr>
+<tr>
+<td title='AListAllTestNG.testdelStart_1()'><b>testdelStart_1</b><br>Test class: AListAllTestNG</td>
+<td></td>
+<td>0</td>
+<td>AListAllTestNG@2a5ca609</td></tr>
+<tr>
+<td title='AListAllTestNG.testhalfReverse_many()'><b>testhalfReverse_many</b><br>Test class: AListAllTestNG</td>
+<td></td>
+<td>0</td>
+<td>AListAllTestNG@20e2cbe0</td></tr>
+<tr>
+<td title='AListAllTestNG.testhalfReverse_many()'><b>testhalfReverse_many</b><br>Test class: AListAllTestNG</td>
+<td></td>
+<td>0</td>
+<td>AListAllTestNG@2a2d45ba</td></tr>
+<tr>
+<td title='AListAllTestNG.testhalfReverse_many()'><b>testhalfReverse_many</b><br>Test class: AListAllTestNG</td>
+<td></td>
+<td>0</td>
+<td>AListAllTestNG@2a5ca609</td></tr>
+<tr>
+<td title='LList2WhiteNG.testhalfReverse_many()'><b>testhalfReverse_many</b><br>Test class: LList2WhiteNG</td>
+<td></td>
+<td>0</td>
+<td>LList2WhiteNG@5c7fa833</td></tr>
+<tr>
+<td title='LList2WhiteNG.testhalfReverse_many_even()'><b>testhalfReverse_many_even</b><br>Test class: LList2WhiteNG</td>
+<td></td>
+<td>0</td>
+<td>LList2WhiteNG@5c7fa833</td></tr>
+<tr>
+<td title='AListAllTestNG.testsort_many()'><b>testsort_many</b><br>Test class: AListAllTestNG</td>
+<td></td>
+<td>0</td>
+<td>AListAllTestNG@20e2cbe0</td></tr>
+<tr>
+<td title='AListAllTestNG.testsort_many()'><b>testsort_many</b><br>Test class: AListAllTestNG</td>
+<td></td>
+<td>0</td>
+<td>AListAllTestNG@2a2d45ba</td></tr>
+<tr>
+<td title='AListAllTestNG.testsort_many()'><b>testsort_many</b><br>Test class: AListAllTestNG</td>
+<td></td>
+<td>0</td>
+<td>AListAllTestNG@2a5ca609</td></tr>
+<tr>
+<td title='LList2WhiteNG.testsort_many()'><b>testsort_many</b><br>Test class: LList2WhiteNG</td>
+<td></td>
+<td>0</td>
+<td>LList2WhiteNG@5c7fa833</td></tr>
+<tr>
+<td title='LList2WhiteNG.testsort_many_again()'><b>testsort_many_again</b><br>Test class: LList2WhiteNG</td>
+<td></td>
+<td>0</td>
+<td>LList2WhiteNG@5c7fa833</td></tr>
+</table><p>
+</body>
+</html>
